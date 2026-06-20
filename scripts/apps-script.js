@@ -44,7 +44,8 @@ function syncToGitHub() {
 
 // ------------------------------------------------------------
 // Build menu.json from the Food Menu tab
-// Columns: A=Section  B=Name  C=Description  D=Price Sm  E=Price Lg  F=Note
+// Columns: A=Section  B=Name  C=Description  D=Price Sm  E=Price Lg  F=Note  G=Section Note
+// Section Note (G) only needs to be filled on the first row of a section — shown once under the section heading.
 // ------------------------------------------------------------
 function buildMenuData(sheet) {
   const rows = sheet.getDataRange().getValues().slice(1)
@@ -56,6 +57,8 @@ function buildMenuData(sheet) {
 
     if (!sections[section]) {
       sections[section] = { title: section, items: [] }
+      const sectionNote = String(row[6] || '').trim()
+      if (sectionNote) sections[section].sectionNote = sectionNote
     }
 
     const item = {

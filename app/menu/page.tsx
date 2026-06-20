@@ -57,6 +57,9 @@ export default function MenuPage() {
             <div key={section.title} className="mb-20">
               <div className="text-center mb-10">
                 <h2 className="font-serif text-3xl md:text-4xl text-foreground">{section.title}</h2>
+                {"sectionNote" in section && Boolean(section.sectionNote) && (
+                  <p className="text-muted-foreground text-sm mt-3 max-w-2xl mx-auto">{String(section.sectionNote)}</p>
+                )}
               </div>
 
               <div className="space-y-8">

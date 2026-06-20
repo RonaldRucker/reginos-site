@@ -185,77 +185,22 @@
   },
   {
     "title": "PASTA",
+    "sectionNote": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
     "items": [
-      {
-        "name": "TOMATO",
-        "description": "",
-        "priceSm": "20"
-      },
-      {
-        "name": "MUSHROOM",
-        "description": "",
-        "priceSm": "22"
-      },
-      {
-        "name": "MEAT",
-        "description": "",
-        "priceSm": "22"
-      },
-      {
-        "name": "MARINARA",
-        "description": "",
-        "priceSm": "20"
-      },
-      {
-        "name": "BUTTER OR OLIVE OIL & GARLIC",
-        "description": "",
-        "priceSm": "20"
-      },
-      {
-        "name": "SAUSAGES",
-        "description": "",
-        "priceSm": "24"
-      },
-      {
-        "name": "MEATBALLS",
-        "description": "",
-        "priceSm": "24"
-      },
-      {
-        "name": "VEAL MARINARA",
-        "description": "",
-        "priceSm": "28"
-      },
-      {
-        "name": "SHRIMP MARINARA",
-        "description": "",
-        "priceSm": "29"
-      },
-      {
-        "name": "SCALLOPS MARINARA",
-        "description": "",
-        "priceSm": "36"
-      },
-      {
-        "name": "CHICKEN MARINARA",
-        "description": "",
-        "priceSm": "24"
-      },
-      {
-        "name": "CALAMARI",
-        "description": "",
-        "priceSm": "26"
-      },
-      {
-        "name": "ANCHOVY",
-        "description": "",
-        "priceSm": "20"
-      },
-      {
-        "name": "CLAM",
-        "description": "Red or White. Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
-        "priceSm": "29"
-      }
+      { "name": "TOMATO", "description": "", "priceSm": "20" },
+      { "name": "MUSHROOM", "description": "", "priceSm": "22" },
+      { "name": "MEAT", "description": "", "priceSm": "22" },
+      { "name": "MARINARA", "description": "", "priceSm": "20" },
+      { "name": "BUTTER OR OLIVE OIL & GARLIC", "description": "", "priceSm": "20" },
+      { "name": "SAUSAGES", "description": "", "priceSm": "24" },
+      { "name": "MEATBALLS", "description": "", "priceSm": "24" },
+      { "name": "VEAL MARINARA", "description": "", "priceSm": "28" },
+      { "name": "SHRIMP MARINARA", "description": "", "priceSm": "29" },
+      { "name": "SCALLOPS MARINARA", "description": "", "priceSm": "36" },
+      { "name": "CHICKEN MARINARA", "description": "", "priceSm": "24" },
+      { "name": "CALAMARI", "description": "", "priceSm": "26" },
+      { "name": "ANCHOVY", "description": "", "priceSm": "20" },
+      { "name": "CLAM", "description": "Red or White", "priceSm": "29" }
     ]
   },
   {
@@ -412,6 +357,7 @@
   },
   {
     "title": "PIZZA",
+    "sectionNote": "Toppings: Onions, Green Peppers, Mushrooms, Feta, Artichoke, Garlic, Tomato, Spinach, Anchovies, Olives, Jalapeno, Pineapple, Pepperoni, Sausage, Salami, Beef, Ham, Meatball, Bacon",
     "items": [
       {
         "name": "SMALL CHEESE 12″",
@@ -630,74 +576,19 @@
   },
   {
     "title": "LUNCH MENU - BURGERS & SUBS",
+    "sectionNote": "Add fries, onion rings or house salad for +$5",
     "items": [
-      {
-        "name": "TRIPLE DECK CLUB",
-        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "12",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "GREEK BURGER",
-        "description": "Feta, onion, garlic, spices. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "14",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "PIZZA BURGER",
-        "description": "Pepperoni, mozzarella, pizza sauce. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "13",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "PROVOLONE SPECIAL BURGER",
-        "description": "Sausage, green pepper, provolone. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "14",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "AMERICAN BACON BURGER",
-        "description": "Bacon & American cheese. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "14",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "MEATBALL OR SAUSAGE SUB",
-        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "15",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "THE ULTIMATE PARM SUB",
-        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "14 (Eggplant)",
-        "priceLg": "16 (Veal/Chicken)",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "AMERICAN SUBMARINE",
-        "description": "Ham, turkey, American cheese. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "15",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "REGINO’S SUBMARINE",
-        "description": "Salami, ham, turkey, provolone. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "15",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "GRILLED CHICKEN CLUB",
-        "description": "Grilled chicken, bacon, lettuce, tomato. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "15",
-        "note": "add fries, onion rings or house salad for +$5"
-      },
-      {
-        "name": "CRAB CAKE SANDWHICH",
-        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "18",
-        "note": "add fries, onion rings or house salad for +$5"
-      }
+      { "name": "TRIPLE DECK CLUB", "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "12" },
+      { "name": "GREEK BURGER", "description": "Feta, onion, garlic, spices. served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "14" },
+      { "name": "PIZZA BURGER", "description": "Pepperoni, mozzarella, pizza sauce. served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "13" },
+      { "name": "PROVOLONE SPECIAL BURGER", "description": "Sausage, green pepper, provolone. served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "14" },
+      { "name": "AMERICAN BACON BURGER", "description": "Bacon & American cheese. served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "14" },
+      { "name": "MEATBALL OR SAUSAGE SUB", "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "15" },
+      { "name": "THE ULTIMATE PARM SUB", "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "14 (Eggplant)", "priceLg": "16 (Veal/Chicken)" },
+      { "name": "AMERICAN SUBMARINE", "description": "Ham, turkey, American cheese. served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "15" },
+      { "name": "REGINO’S SUBMARINE", "description": "Salami, ham, turkey, provolone. served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "15" },
+      { "name": "GRILLED CHICKEN CLUB", "description": "Grilled chicken, bacon, lettuce, tomato. served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "15" },
+      { "name": "CRAB CAKE SANDWHICH", "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm", "priceSm": "18" }
     ]
   },
   {
