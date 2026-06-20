@@ -1,72 +1,768 @@
 [
   {
-    "title": "Antipasti",
-    "subtitle": "Starters",
+    "title": "STARTERS",
     "items": [
-      { "name": "Bruschetta Classica", "description": "Grilled bread topped with fresh tomatoes, basil, garlic, and extra virgin olive oil", "price": "12" },
-      { "name": "Calamari Fritti", "description": "Crispy fried calamari served with marinara sauce and lemon aioli", "price": "18" },
-      { "name": "Carpaccio di Manzo", "description": "Thinly sliced raw beef, arugula, capers, shaved Parmigiano-Reggiano", "price": "19" },
-      { "name": "Burrata Caprese", "description": "Creamy burrata, heirloom tomatoes, fresh basil, aged balsamic reduction", "price": "17" },
-      { "name": "Arancini", "description": "Crispy risotto balls stuffed with mozzarella and peas, served with tomato sauce", "price": "14" },
-      { "name": "Antipasto Misto", "description": "Selection of Italian cured meats, cheeses, olives, and marinated vegetables", "price": "24" }
+      {
+        "name": "REGINO’S BREAD MELT",
+        "description": "Garlic bread topped with homemade sausage and melted cheese, served with marinara dipping sauce",
+        "priceSm": "12"
+      },
+      {
+        "name": "MEATBALLS",
+        "description": "Three large meatballs topped with tomato sauce",
+        "priceSm": "12"
+      },
+      {
+        "name": "CALAMARI",
+        "description": "",
+        "priceSm": "16",
+        "priceLg": "24"
+      },
+      {
+        "name": "DIPPING SAUCE",
+        "description": "Marinara, tomato, meatsauce, mushroom",
+        "priceSm": "5"
+      },
+      {
+        "name": "GARLIC BREAD",
+        "description": "Four pieces of garlic bread",
+        "priceSm": "6",
+        "note": "(Add cheese +$2)"
+      },
+      {
+        "name": "HOMEMADE SAUSAGE",
+        "description": "",
+        "priceSm": "$8 (one)",
+        "priceLg": "$12 (two)"
+      },
+      {
+        "name": "MUSSELS MARINARA",
+        "description": "",
+        "priceSm": "18",
+        "priceLg": "24"
+      },
+      {
+        "name": "BIANCO",
+        "description": "Clams or Mussels steamed with white wine butter and garlic",
+        "priceSm": "18",
+        "priceLg": "24"
+      },
+      {
+        "name": "SHRIMP COCKTAIL",
+        "description": "Ten shrimp served with cocktail sauce",
+        "priceSm": "15"
+      },
+      {
+        "name": "FRIED MOZZARELLA OR RAVIOLI",
+        "description": "Served with marinara sauce",
+        "priceSm": "12"
+      }
     ]
   },
   {
-    "title": "Zuppe e Insalate",
-    "subtitle": "Soups & Salads",
+    "title": "SALADS",
     "items": [
-      { "name": "Minestrone della Nonna", "description": "Nonna's recipe: hearty vegetable soup with white beans and pasta", "price": "11" },
-      { "name": "Italian Wedding Soup", "description": "Chicken broth with mini meatballs, escarole, and acini di pepe pasta", "price": "12" },
-      { "name": "Insalata Cesare", "description": "Romaine hearts, house-made Caesar dressing, focaccia croutons, Parmigiano", "price": "14" },
-      { "name": "Insalata Tricolore", "description": "Arugula, radicchio, endive, shaved Parmigiano, lemon vinaigrette", "price": "13" }
+      {
+        "name": "HOUSE GARDEN SALAD",
+        "description": "",
+        "priceSm": "8"
+      },
+      {
+        "name": "ITALIAN MIX SALAD",
+        "description": "",
+        "priceSm": "18",
+        "priceLg": "43",
+        "note": "Single $14"
+      },
+      {
+        "name": "GREEK SALAD",
+        "description": "",
+        "priceSm": "20",
+        "priceLg": "45",
+        "note": "Single $15"
+      },
+      {
+        "name": "MOZZARELLA & TOMATOES",
+        "description": "",
+        "priceSm": "14"
+      },
+      {
+        "name": "ANCHOVIES & LETTUCE",
+        "description": "",
+        "priceSm": "10"
+      }
     ]
   },
   {
-    "title": "Pasta",
-    "subtitle": "House-Made Daily",
+    "title": "SOUPS",
     "items": [
-      { "name": "Spaghetti alla Carbonara", "description": "Guanciale, egg yolk, Pecorino Romano, black pepper", "price": "24" },
-      { "name": "Rigatoni alla Vodka", "description": "San Marzano tomatoes, cream, vodka, fresh basil, Parmigiano", "price": "22" },
-      { "name": "Fettuccine Alfredo", "description": "Our signature creamy Alfredo sauce with fresh fettuccine", "price": "21" },
-      { "name": "Lasagna della Casa", "description": "Layered pasta with beef and pork ragù, béchamel, mozzarella", "price": "26" },
-      { "name": "Ravioli di Ricotta", "description": "House-made ravioli filled with ricotta and spinach, brown butter sage", "price": "25" },
-      { "name": "Pappardelle al Ragù", "description": "Wide ribbon pasta with slow-cooked Bolognese sauce", "price": "26" },
-      { "name": "Linguine alle Vongole", "description": "Fresh clams, white wine, garlic, parsley, touch of chili", "price": "28" },
-      { "name": "Gnocchi Sorrentina", "description": "Potato gnocchi, San Marzano tomato sauce, fresh mozzarella, basil", "price": "23" }
+      {
+        "name": "MINESTRONE",
+        "description": "Italian vegetable soup",
+        "priceSm": "$7 (cup)",
+        "priceLg": "$10 (bowl)"
+      },
+      {
+        "name": "STRACCIATELLA",
+        "description": "Italian egg drop & spinach soup",
+        "priceSm": "$7 (cup)",
+        "priceLg": "$10 (bowl)"
+      }
     ]
   },
   {
-    "title": "Secondi",
-    "subtitle": "Main Courses",
+    "title": "SPECIALTIES",
     "items": [
-      { "name": "Osso Buco alla Milanese", "description": "Braised veal shank, gremolata, saffron risotto — our signature dish", "price": "48" },
-      { "name": "Pollo Parmigiana", "description": "Breaded chicken cutlet, San Marzano marinara, mozzarella, spaghetti", "price": "29" },
-      { "name": "Vitello Piccata", "description": "Veal medallions, lemon caper butter sauce, roasted potatoes", "price": "36" },
-      { "name": "Branzino al Forno", "description": "Whole roasted Mediterranean sea bass, herbs, lemon, olive oil", "price": "42" },
-      { "name": "Bistecca Fiorentina", "description": "32oz bone-in ribeye, Tuscan style, rosemary, garlic, olive oil", "price": "68", "note": "For Two" },
-      { "name": "Saltimbocca alla Romana", "description": "Veal scallopine, prosciutto, sage, white wine butter sauce", "price": "34" },
-      { "name": "Gamberoni alla Griglia", "description": "Grilled jumbo shrimp, garlic herb butter, grilled vegetables", "price": "38" }
+      {
+        "name": "A LA REGINO’S",
+        "description": "Spaghetti, meatball, sausage, mushroom sauce, & melted mozzarella topped with green peppers",
+        "priceSm": "22",
+        "priceLg": "30"
+      },
+      {
+        "name": "VEAL & PEPPERS",
+        "description": "",
+        "priceSm": "23",
+        "priceLg": "30"
+      },
+      {
+        "name": "PASTA & VEAL",
+        "description": "",
+        "priceSm": "23",
+        "priceLg": "30"
+      },
+      {
+        "name": "CHEF’S SPECIAL",
+        "description": "Spaghetti, meatball, sausage, mushroom sauce, & melted mozzarella",
+        "priceSm": "22",
+        "priceLg": "30"
+      },
+      {
+        "name": "BAKED ZITI SPECIAL",
+        "description": "Ziti, meatball, sausage, mushroom sauce, & melted mozzarella",
+        "priceSm": "22",
+        "priceLg": "30"
+      },
+      {
+        "name": "SAUSAGE & PEPPERS",
+        "description": "",
+        "priceSm": "20",
+        "priceLg": "28"
+      },
+      {
+        "name": "SOUVLAKI CHICKEN BREAST",
+        "description": "Lemon, garlic, and herb chicken breast served with pasta & a house salad",
+        "priceSm": "18"
+      },
+      {
+        "name": "ITALIAN PORK CHOPS",
+        "description": "Green peppers, mushrooms & onions served with red or white sauce & side of pasta",
+        "priceSm": "$23 (One)",
+        "priceLg": "$32 (Two)"
+      },
+      {
+        "name": "ITALIAN STEAK",
+        "description": "Green peppers, mushrooms, & onions served with red or white sauce & side of pasta",
+        "priceSm": "39"
+      },
+      {
+        "name": "RAVIOLI",
+        "description": "Meat, cheese, or combination",
+        "priceSm": "20",
+        "note": "(add side of pasta +$2)"
+      },
+      {
+        "name": "OLD WORLD LASAGNA",
+        "description": "Homemade pasta, sausage, meatball, ricotta, mozzarella, & meat sauce",
+        "priceSm": "22"
+      },
+      {
+        "name": "MANICOTTI",
+        "description": "Homemade pasta shell stuffed with ricotta and topped with tomato sauce and melted mozzarella",
+        "priceSm": "20"
+      }
     ]
   },
   {
-    "title": "Contorni",
-    "subtitle": "Sides",
+    "title": "PASTA",
     "items": [
-      { "name": "Sautéed Broccoli Rabe", "description": "Garlic, olive oil, chili flakes", "price": "10" },
-      { "name": "Roasted Brussels Sprouts", "description": "Pancetta, aged balsamic", "price": "11" },
-      { "name": "Truffle Fries", "description": "Parmesan, truffle oil, fresh herbs", "price": "12" },
-      { "name": "Risotto del Giorno", "description": "Ask your server for today's preparation", "price": "14" }
+      {
+        "name": "TOMATO",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "20"
+      },
+      {
+        "name": "MUSHROOM",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "22"
+      },
+      {
+        "name": "MEAT",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "22"
+      },
+      {
+        "name": "MARINARA",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "20"
+      },
+      {
+        "name": "BUTTER OR OLIVE OIL & GARLIC",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "20"
+      },
+      {
+        "name": "SAUSAGES",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "24"
+      },
+      {
+        "name": "MEATBALLS",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "24"
+      },
+      {
+        "name": "VEAL MARINARA",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "28"
+      },
+      {
+        "name": "SHRIMP MARINARA",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "29"
+      },
+      {
+        "name": "SCALLOPS MARINARA",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "36"
+      },
+      {
+        "name": "CHICKEN MARINARA",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "24"
+      },
+      {
+        "name": "CALAMARI",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "26"
+      },
+      {
+        "name": "ANCHOVY",
+        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "20"
+      },
+      {
+        "name": "CLAM",
+        "description": "Red or White. Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "priceSm": "29"
+      }
     ]
   },
   {
-    "title": "Dolci",
-    "subtitle": "Desserts",
+    "title": "VODKA SAUCES",
     "items": [
-      { "name": "Tiramisù della Casa", "description": "Our famous family recipe — layers of espresso-soaked ladyfingers, mascarpone cream", "price": "12" },
-      { "name": "Panna Cotta", "description": "Vanilla bean cream, seasonal berry compote", "price": "10" },
-      { "name": "Cannoli Siciliani", "description": "Crispy shells, sweet ricotta filling, chocolate chips, pistachios", "price": "11" },
-      { "name": "Affogato", "description": "Vanilla gelato drowned in hot espresso, amaretti cookie", "price": "9" },
-      { "name": "Torta di Limone", "description": "Lemon olive oil cake, mascarpone whipped cream, candied lemon", "price": "11" }
+      {
+        "name": "SPINACH",
+        "description": "",
+        "priceSm": "22",
+        "priceLg": "27"
+      },
+      {
+        "name": "CHICKEN",
+        "description": "",
+        "priceSm": "23",
+        "priceLg": "28"
+      },
+      {
+        "name": "SHRIMP",
+        "description": "",
+        "priceSm": "31"
+      },
+      {
+        "name": "SCALLOPS",
+        "description": "",
+        "priceSm": "36"
+      },
+      {
+        "name": "SHRIMP, SCALLOPS, & CHICKEN",
+        "description": "",
+        "priceSm": "39"
+      }
+    ]
+  },
+  {
+    "title": "ALFREDO SAUCES",
+    "items": [
+      {
+        "name": "SPINACH",
+        "description": "",
+        "priceSm": "21",
+        "priceLg": "26"
+      },
+      {
+        "name": "CHICKEN",
+        "description": "",
+        "priceSm": "22",
+        "priceLg": "27"
+      },
+      {
+        "name": "SHRIMP",
+        "description": "",
+        "priceSm": "30"
+      },
+      {
+        "name": "SCALLOPS",
+        "description": "",
+        "priceSm": "36"
+      },
+      {
+        "name": "SHRIMP, SCALLOPS, & CHICKEN",
+        "description": "",
+        "priceSm": "39"
+      }
+    ]
+  },
+  {
+    "title": "PARMIGIANA",
+    "items": [
+      {
+        "name": "EGGPLANT",
+        "description": "",
+        "priceSm": "20",
+        "priceLg": "26"
+      },
+      {
+        "name": "CHICKEN",
+        "description": "",
+        "priceSm": "22",
+        "priceLg": "28"
+      },
+      {
+        "name": "VEAL",
+        "description": "",
+        "priceSm": "24",
+        "priceLg": "30"
+      },
+      {
+        "name": "EGGPLANT & VEAL",
+        "description": "",
+        "priceSm": "25",
+        "priceLg": "32"
+      },
+      {
+        "name": "SHRIMP",
+        "description": "",
+        "priceSm": "30"
+      }
+    ]
+  },
+  {
+    "title": "WINE SAUCES",
+    "items": [
+      {
+        "name": "FRANCESE",
+        "description": "",
+        "priceSm": "$32 (Chicken)",
+        "priceLg": "$33 (Veal)"
+      },
+      {
+        "name": "SCALOPPINI",
+        "description": "",
+        "priceSm": "$27 (Chicken)",
+        "priceLg": "$28 (Veal)"
+      },
+      {
+        "name": "MARSALA",
+        "description": "",
+        "priceSm": "$27 (Chicken)",
+        "priceLg": "$28 (Veal)"
+      },
+      {
+        "name": "PIZZAIOLI",
+        "description": "",
+        "priceSm": "$27 (Chicken)",
+        "priceLg": "$29 (Veal)"
+      }
+    ]
+  },
+  {
+    "title": "CACCIATORE",
+    "items": [
+      {
+        "name": "SHRIMP",
+        "description": "",
+        "priceSm": "30"
+      },
+      {
+        "name": "VEAL",
+        "description": "",
+        "priceSm": "29"
+      },
+      {
+        "name": "CHICKEN",
+        "description": "",
+        "priceSm": "28"
+      },
+      {
+        "name": "SHRIMP & CHICKEN",
+        "description": "",
+        "priceSm": "34"
+      }
+    ]
+  },
+  {
+    "title": "PIZZA",
+    "items": [
+      {
+        "name": "SMALL CHEESE 12″",
+        "description": "",
+        "priceSm": "17",
+        "note": "$2.75 each topping. Toppings: Onions, Green Peppers, Mushrooms, Feta, Artichoke, Garlic, Tomato, Spinach, Anchovies, Olives, Jalapeno, Pineapple, Pepperoni, Sausage, Salami, Beef, Ham, Meatball, Bacon"
+      },
+      {
+        "name": "MEDIUM CHEESE 14″",
+        "description": "",
+        "priceSm": "19",
+        "note": "$3.25 each topping"
+      },
+      {
+        "name": "JUMBO CHEESE 16″",
+        "description": "",
+        "priceSm": "23",
+        "note": "1-5 toppings $3.75 each, 6+ toppings $3.25 each"
+      },
+      {
+        "name": "ETNA 16″",
+        "description": "Tomatoes, mushrooms, onions, spinache, garlic, green peppers",
+        "priceSm": "36"
+      },
+      {
+        "name": "VESUVIUS 16″",
+        "description": "Garlic, pepperoni, sausage, beef, salami, ham",
+        "priceSm": "36"
+      },
+      {
+        "name": "MOUNT ST. HELENS 16″",
+        "description": "Pepperoni, sausage, onions, green peppers, mushrooms",
+        "priceSm": "36"
+      },
+      {
+        "name": "OLYMPUS 16″",
+        "description": "Garlic, olives, tomatoes, feta, spinach, artichoke",
+        "priceSm": "36"
+      }
+    ]
+  },
+  {
+    "title": "SEAFOOD",
+    "items": [
+      {
+        "name": "NEOPOLITAN",
+        "description": "Clams or mussels in marinara sauce served over pasta",
+        "priceSm": "27"
+      },
+      {
+        "name": "SUPERIOR PRAWN",
+        "description": "Sautéed shrimp in butter and garlic served over pasta",
+        "priceSm": "24"
+      },
+      {
+        "name": "SANTA LUCIA",
+        "description": "Clams or mussels in a slightly spicy garlic & white wine sauce served over pasta",
+        "priceSm": "27"
+      },
+      {
+        "name": "SEAFOOD FRA DIAVOLO",
+        "description": "Shrimp, clams, & scallops in spicy marinara served over pasta",
+        "priceSm": "36"
+      },
+      {
+        "name": "CRAB CAKE PLATTER",
+        "description": "Crab cake served with a house salad & 2 sides OR pasta",
+        "priceSm": "$23 (One)",
+        "priceLg": "$33 (Two)"
+      },
+      {
+        "name": "SEAFOOD PLATTER",
+        "description": "Tilapia, shrimp, scallops, & crab cake served with a house salad & 2 sides OR pasta",
+        "priceSm": "40"
+      },
+      {
+        "name": "PESCE FRESCO",
+        "description": "Tilapia poached in marinara sauce served over pasta",
+        "priceSm": "23"
+      },
+      {
+        "name": "STUFFED SHRIMP",
+        "description": "Shrimp stuffed with crab meat, served over pasta",
+        "priceSm": "23"
+      },
+      {
+        "name": "SHRIMP SCAMPI",
+        "description": "White wine, garlic butter sauce served over pasta",
+        "priceSm": "28"
+      }
+    ]
+  },
+  {
+    "title": "AMERICAN ENTREES",
+    "items": [
+      {
+        "name": "PORK CHOPS",
+        "description": "Fried or broiled. Includes small house salad & 2 sides OR pasta",
+        "priceSm": "$20 (One)",
+        "priceLg": "$28 (Two)"
+      },
+      {
+        "name": "NEW YORK STRIP",
+        "description": "Includes small house salad & 2 sides OR pasta",
+        "priceSm": "35"
+      },
+      {
+        "name": "JR. NEW YORK STRIP",
+        "description": "Includes small house salad & 2 sides OR pasta",
+        "priceSm": "29"
+      },
+      {
+        "name": "CHOPPED SIRLOIN",
+        "description": "Topped with sautéed onions and gravy. Includes small house salad & 2 sides OR pasta",
+        "priceSm": "22"
+      },
+      {
+        "name": "CHICKEN BREAST",
+        "description": "Includes small house salad & 2 sides OR pasta",
+        "priceSm": "18"
+      },
+      {
+        "name": "VEAL CUTLET & GRAVY",
+        "description": "Includes small house salad & 2 sides OR pasta",
+        "priceSm": "20",
+        "priceLg": "26"
+      },
+      {
+        "name": "LIVER & ONIONS",
+        "description": "Includes small house salad & 2 sides OR pasta",
+        "priceSm": "20"
+      }
+    ]
+  },
+  {
+    "title": "LUNCH MENU - SPECIALTIES",
+    "items": [
+      {
+        "name": "BAKED TORTELLINI",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "16"
+      },
+      {
+        "name": "SAUSAGE OR MEATBALL",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "16"
+      },
+      {
+        "name": "OLIVE OIL OR BUTTER & GARLIC",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "12"
+      },
+      {
+        "name": "MEAT OR MUSHROOM SAUCE",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "16"
+      },
+      {
+        "name": "TOMATO SAUCE",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "14"
+      },
+      {
+        "name": "CLAM SAUCE",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "19"
+      },
+      {
+        "name": "MARINARA SAUCE",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "15"
+      },
+      {
+        "name": "VEAL OR CHICKEN PARM",
+        "description": "Served with pasta. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "18"
+      },
+      {
+        "name": "EGGPLANT PARM",
+        "description": "Served with pasta. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "16"
+      },
+      {
+        "name": "FETTUCCINI ALFREDO",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "18",
+        "note": "(add chicken +$2)"
+      },
+      {
+        "name": "SAUSAGE & GREEN PEPPERS",
+        "description": "Served with pasta. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "16"
+      },
+      {
+        "name": "SOUVLAKI CHICKEN",
+        "description": "Served with pasta. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "14"
+      },
+      {
+        "name": "GRILLED CHICKEN SALAD",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "13"
+      }
+    ]
+  },
+  {
+    "title": "LUNCH MENU - PIZZA",
+    "items": [
+      {
+        "name": "LUNCH PIZZA 10″",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "14",
+        "note": "+$2.50 each topping"
+      }
+    ]
+  },
+  {
+    "title": "LUNCH MENU - BURGERS & SUBS",
+    "items": [
+      {
+        "name": "TRIPLE DECK CLUB",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "12",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "GREEK BURGER",
+        "description": "Feta, onion, garlic, spices. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "14",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "PIZZA BURGER",
+        "description": "Pepperoni, mozzarella, pizza sauce. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "13",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "PROVOLONE SPECIAL BURGER",
+        "description": "Sausage, green pepper, provolone. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "14",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "AMERICAN BACON BURGER",
+        "description": "Bacon & American cheese. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "14",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "MEATBALL OR SAUSAGE SUB",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "15",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "THE ULTIMATE PARM SUB",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "$14 (Eggplant)",
+        "priceLg": "$16 (Veal/Chicken)",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "AMERICAN SUBMARINE",
+        "description": "Ham, turkey, American cheese. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "15",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "REGINO’S SUBMARINE",
+        "description": "Salami, ham, turkey, provolone. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "15",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "GRILLED CHICKEN CLUB",
+        "description": "Grilled chicken, bacon, lettuce, tomato. served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "15",
+        "note": "add fries, onion rings or house salad for +$5"
+      },
+      {
+        "name": "CRAB CAKE SANDWHICH",
+        "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
+        "priceSm": "18",
+        "note": "add fries, onion rings or house salad for +$5"
+      }
+    ]
+  },
+  {
+    "title": "KIDS MENU",
+    "items": [
+      {
+        "name": "CHICKEN TENDERS & FRIES",
+        "description": "",
+        "priceSm": "12"
+      },
+      {
+        "name": "SPAGHETTI & BUTTER",
+        "description": "",
+        "priceSm": "10"
+      },
+      {
+        "name": "SPAGHETTI & TOMATO SAUCE",
+        "description": "",
+        "priceSm": "12"
+      },
+      {
+        "name": "SPAGHETTI & MEAT SAUCE",
+        "description": "",
+        "priceSm": "13"
+      },
+      {
+        "name": "SPAGHETTI & MEATBALL",
+        "description": "",
+        "priceSm": "13"
+      },
+      {
+        "name": "MOZZARELLA STICKS & FRIES",
+        "description": "",
+        "priceSm": "12"
+      },
+      {
+        "name": "FRIED SHRIMP & FRIES",
+        "description": "",
+        "priceSm": "15"
+      }
+    ]
+  },
+  {
+    "title": "DESSERTS",
+    "items": [
+      {
+        "name": "NEW YORK CHEESECAKE",
+        "description": "",
+        "priceSm": "8"
+      },
+      {
+        "name": "CANNOLI OR CHOCOLATE CANNOLI",
+        "description": "",
+        "priceSm": "6"
+      },
+      {
+        "name": "TIRAMISU",
+        "description": "",
+        "priceSm": "6"
+      },
+      {
+        "name": "SPUMONI TARTUFO",
+        "description": "",
+        "priceSm": "6"
+      }
     ]
   }
 ]
