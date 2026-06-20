@@ -2,7 +2,22 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import drinksData from "@/data/drinks.json"
+import drinksDataRaw from "@/data/drinks.json"
+
+type DrinkItem = {
+  name: string
+  description: string
+  glass: string | number
+  bottle?: string | number
+  note?: string
+}
+
+type DrinkSection = {
+  title: string
+  items: DrinkItem[]
+}
+
+const drinksData = drinksDataRaw as DrinkSection[]
 
 export const metadata: Metadata = {
   title: "Wine & Drinks | Regino's Italian Restaurant",
@@ -67,14 +82,14 @@ export default function DrinksPage() {
                     <div className="flex-1">
                       <h3 className="font-serif text-xl text-foreground">{item.name}</h3>
                       <p className="text-muted-foreground text-sm mt-1">{item.description}</p>
-                      {"note" in item && item.note && (
+                      {item.note && (
                         <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded mt-1 inline-block">
                           {item.note}
                         </span>
                       )}
                     </div>
                     <p className="font-serif text-lg text-primary shrink-0">
-                      {"bottle" in item && item.bottle
+                      {item.bottle
                         ? `$${item.glass} / $${item.bottle}`
                         : `$${item.glass}`
                       }
