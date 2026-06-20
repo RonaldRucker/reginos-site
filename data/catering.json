@@ -1,0 +1,36 @@
+[
+  {
+    "item": "Garden Salad",
+    "smallServings": "8-10 people",
+    "largeServings": "18-30 people"
+  },
+  {
+    "item": "Greek Salad",
+    "smallServings": "8-10 people",
+    "largeServings": "18-30 people"
+  },
+  {
+    "item": "Pasta Pans",
+    "smallServings": "8-10 people",
+    "largeServings": "18-30 people",
+    "notes": "Choice of Pasta: Spaghetti, Rigatoni, Ziti, Linguine\nChoice of Sauce: Tomato Sauce, Marinara"
+  },
+  {
+    "item": "Fettuccini Alfredo",
+    "smallServings": "8-12 people",
+    "largeServings": "18-30 people"
+  },
+  {
+    "item": "Chicken Parm or Eggplant Parm",
+    "smallServings": "6-8 people",
+    "largeServings": "18-24 people"
+  },
+  {
+    "item": "Lasagna",
+    "smallServings": "6-8 people",
+    "largeServings": "18-20 people"
+  },
+  {
+    "item": "For pricing and more details, please call us at (757) 588-4300."
+  }
+]
