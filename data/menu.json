@@ -256,7 +256,8 @@
         "description": "Red or White. Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
         "priceSm": "29"
       }
-    ]
+    ],
+    "sectionNote": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair. \nRed or White: Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair"
   },
   {
     "title": "VODKA SAUCES",
@@ -451,7 +452,8 @@
         "description": "Garlic, olives, tomatoes, feta, spinach, artichoke",
         "priceSm": "36"
       }
-    ]
+    ],
+    "sectionNote": "Toppings: Onions, Green Peppers, Mushrooms, Feta, Artichoke, Garlic, Tomato, Spinach, Anchovies, Olives, Jalapeno, Pineapple, Pepperoni, Sausage, Salami, Beef, Ham, Meatball, Bacon"
   },
   {
     "title": "SEAFOOD",
@@ -544,7 +546,8 @@
         "description": "",
         "priceSm": "20"
       }
-    ]
+    ],
+    "sectionNote": "Includes small house salad & 2 sides OR pasta"
   },
   {
     "title": "LUNCH MENU - SPECIALTIES",
@@ -615,7 +618,8 @@
         "description": "",
         "priceSm": "13"
       }
-    ]
+    ],
+    "sectionNote": "Served Mon-Fri 11am – 4pm, Sat 12am – 4pm\nAdd fries, onion rings or house salad for +$5"
   },
   {
     "title": "LUNCH MENU - PIZZA",
@@ -626,7 +630,8 @@
         "priceSm": "14",
         "note": "each topping +$2.50"
       }
-    ]
+    ],
+    "sectionNote": "Served Mon-Fri 11am – 4pm, Sat 12am – 4pm"
   },
   {
     "title": "LUNCH MENU - BURGERS & SUBS",
