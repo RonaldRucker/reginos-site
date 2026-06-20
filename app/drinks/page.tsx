@@ -21,7 +21,7 @@ const drinksData = drinksDataRaw as DrinkSection[]
 
 export const metadata: Metadata = {
   title: "Wine & Drinks | Regino's Italian Restaurant",
-  description: "Explore our curated selection of Italian wines, signature cocktails, and refreshing beverages.",
+  description: "Explore our curated selection of premium wines, signature cocktails, and refreshing beverages.",
 }
 
 export default function DrinksPage() {
@@ -50,8 +50,7 @@ export default function DrinksPage() {
               Wine &amp; Drinks
             </h1>
             <p className="text-background/90 max-w-xl mx-auto">
-              From our carefully curated wine cellar to signature cocktails, the perfect pairing
-              awaits for every dish and occasion.
+              Explore our curated selection of premium wines, beers, and signature cocktails.
             </p>
           </div>
         </div>
@@ -60,15 +59,15 @@ export default function DrinksPage() {
       {/* Drink Menu Content */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+          {/* <div className="text-center mb-16">
             <p className="text-muted-foreground text-sm">
               Our sommelier is happy to assist with wine pairings for your meal.
               <br />
               Wine prices shown as Glass / Bottle. Half bottles available for select wines.
               <br />
               Corkage fee: $35 per bottle (limit 2 per table).
-            </p>
-          </div>
+            </p> 
+          </div> */}
 
           {drinksData.map((section) => (
             <div key={section.title} className="mb-20">

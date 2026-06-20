@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card"
 import { ArrowRight, UtensilsCrossed, Wine, PartyPopper } from "lucide-react"
 
 const galleryImages = [
-  { src: "/images/gallery-1.jpg", alt: "Handmade pasta" },
+  { src: "/images/owners.jpg", alt: "Father and son" },
   { src: "/images/gallery-2.jpg", alt: "Restaurant interior" },
   { src: "/images/gallery-3.jpg", alt: "Tiramisu dessert" },
   { src: "/images/gallery-4.jpg", alt: "Chef cooking" },
@@ -86,8 +86,8 @@ export default function HomePage() {
             <div className="relative">
               <div className="aspect-[4/5] relative rounded-lg overflow-hidden">
                 <Image
-                  src="/images/gallery-1.jpg"
-                  alt="Fresh handmade pasta"
+                  src="/images/owners.jpg"
+                  alt="Father and son"
                   fill
                   className="object-cover"
                 />

@@ -45,13 +45,13 @@ export default function MenuPage() {
       {/* Menu Content */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+          {/* <div className="text-center mb-16">
             <p className="text-muted-foreground text-sm">
               All pasta is made fresh daily in house. Gluten-free pasta available upon request.
               <br />
               Please inform your server of any allergies or dietary restrictions.
             </p>
-          </div>
+          </div> */}
 
           {menuData.map((section) => (
             <div key={section.title} className="mb-20">
