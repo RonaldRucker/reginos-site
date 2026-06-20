@@ -27,7 +27,7 @@
         "name": "GARLIC BREAD",
         "description": "Four pieces of garlic bread",
         "priceSm": "6",
-        "note": "(Add cheese +$2)"
+        "note": "add cheese +$2"
       },
       {
         "name": "HOMEMADE SAUSAGE",
@@ -72,14 +72,14 @@
         "description": "",
         "priceSm": "18",
         "priceLg": "43",
-        "note": "Single $14"
+        "note": "single $14"
       },
       {
         "name": "GREEK SALAD",
         "description": "",
         "priceSm": "20",
         "priceLg": "45",
-        "note": "Single $15"
+        "note": "single $15"
       },
       {
         "name": "MOZZARELLA & TOMATOES",
@@ -169,7 +169,7 @@
         "name": "RAVIOLI",
         "description": "Meat, cheese, or combination",
         "priceSm": "20",
-        "note": "(add side of pasta +$2)"
+        "note": "add side of pasta +$2"
       },
       {
         "name": "OLD WORLD LASAGNA",
@@ -188,67 +188,67 @@
     "items": [
       {
         "name": "TOMATO",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "20"
       },
       {
         "name": "MUSHROOM",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "22"
       },
       {
         "name": "MEAT",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "22"
       },
       {
         "name": "MARINARA",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "20"
       },
       {
         "name": "BUTTER OR OLIVE OIL & GARLIC",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "20"
       },
       {
         "name": "SAUSAGES",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "24"
       },
       {
         "name": "MEATBALLS",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "24"
       },
       {
         "name": "VEAL MARINARA",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "28"
       },
       {
         "name": "SHRIMP MARINARA",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "29"
       },
       {
         "name": "SCALLOPS MARINARA",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "36"
       },
       {
         "name": "CHICKEN MARINARA",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "24"
       },
       {
         "name": "CALAMARI",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "26"
       },
       {
         "name": "ANCHOVY",
-        "description": "Your choice of Shells, Rigatoni, Linguini, Spaghetti, Fettuccini, Ziti, Penne, or Angel Hair",
+        "description": "",
         "priceSm": "20"
       },
       {
@@ -417,13 +417,13 @@
         "name": "SMALL CHEESE 12″",
         "description": "",
         "priceSm": "17",
-        "note": "$2.75 each topping. Toppings: Onions, Green Peppers, Mushrooms, Feta, Artichoke, Garlic, Tomato, Spinach, Anchovies, Olives, Jalapeno, Pineapple, Pepperoni, Sausage, Salami, Beef, Ham, Meatball, Bacon"
+        "note": "each topping +$2.75"
       },
       {
         "name": "MEDIUM CHEESE 14″",
         "description": "",
         "priceSm": "19",
-        "note": "$3.25 each topping"
+        "note": "each topping +$3.25"
       },
       {
         "name": "JUMBO CHEESE 16″",
@@ -598,7 +598,7 @@
         "name": "FETTUCCINI ALFREDO",
         "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
         "priceSm": "18",
-        "note": "(add chicken +$2)"
+        "note": "add chicken +$2"
       },
       {
         "name": "SAUSAGE & GREEN PEPPERS",
@@ -624,7 +624,7 @@
         "name": "LUNCH PIZZA 10″",
         "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
         "priceSm": "14",
-        "note": "+$2.50 each topping"
+        "note": "each topping +$2.50"
       }
     ]
   },
