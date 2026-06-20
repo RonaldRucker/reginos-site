@@ -32,8 +32,8 @@
       {
         "name": "HOMEMADE SAUSAGE",
         "description": "",
-        "priceSm": "$8 (one)",
-        "priceLg": "$12 (two)"
+        "priceSm": "8 (one)",
+        "priceLg": "12 (two)"
       },
       {
         "name": "MUSSELS MARINARA",
@@ -99,14 +99,14 @@
       {
         "name": "MINESTRONE",
         "description": "Italian vegetable soup",
-        "priceSm": "$7 (cup)",
-        "priceLg": "$10 (bowl)"
+        "priceSm": "7 (cup)",
+        "priceLg": "10 (bowl)"
       },
       {
         "name": "STRACCIATELLA",
         "description": "Italian egg drop & spinach soup",
-        "priceSm": "$7 (cup)",
-        "priceLg": "$10 (bowl)"
+        "priceSm": "7 (cup)",
+        "priceLg": "10 (bowl)"
       }
     ]
   },
@@ -157,8 +157,8 @@
       {
         "name": "ITALIAN PORK CHOPS",
         "description": "Green peppers, mushrooms & onions served with red or white sauce & side of pasta",
-        "priceSm": "$23 (One)",
-        "priceLg": "$32 (Two)"
+        "priceSm": "23 (One)",
+        "priceLg": "32 (Two)"
       },
       {
         "name": "ITALIAN STEAK",
@@ -362,26 +362,26 @@
       {
         "name": "FRANCESE",
         "description": "",
-        "priceSm": "$32 (Chicken)",
-        "priceLg": "$33 (Veal)"
+        "priceSm": "32 (Chicken)",
+        "priceLg": "33 (Veal)"
       },
       {
         "name": "SCALOPPINI",
         "description": "",
-        "priceSm": "$27 (Chicken)",
-        "priceLg": "$28 (Veal)"
+        "priceSm": "27 (Chicken)",
+        "priceLg": "28 (Veal)"
       },
       {
         "name": "MARSALA",
         "description": "",
-        "priceSm": "$27 (Chicken)",
-        "priceLg": "$28 (Veal)"
+        "priceSm": "27 (Chicken)",
+        "priceLg": "28 (Veal)"
       },
       {
         "name": "PIZZAIOLI",
         "description": "",
-        "priceSm": "$27 (Chicken)",
-        "priceLg": "$29 (Veal)"
+        "priceSm": "27 (Chicken)",
+        "priceLg": "29 (Veal)"
       }
     ]
   },
@@ -479,8 +479,8 @@
       {
         "name": "CRAB CAKE PLATTER",
         "description": "Crab cake served with a house salad & 2 sides OR pasta",
-        "priceSm": "$23 (One)",
-        "priceLg": "$33 (Two)"
+        "priceSm": "23 (One)",
+        "priceLg": "33 (Two)"
       },
       {
         "name": "SEAFOOD PLATTER",
@@ -510,8 +510,8 @@
       {
         "name": "PORK CHOPS",
         "description": "Fried or broiled. Includes small house salad & 2 sides OR pasta",
-        "priceSm": "$20 (One)",
-        "priceLg": "$28 (Two)"
+        "priceSm": "20 (One)",
+        "priceLg": "28 (Two)"
       },
       {
         "name": "NEW YORK STRIP",
@@ -670,8 +670,8 @@
       {
         "name": "THE ULTIMATE PARM SUB",
         "description": "served Mon-Fri 11am – 4pm, Sat 12am – 4pm",
-        "priceSm": "$14 (Eggplant)",
-        "priceLg": "$16 (Veal/Chicken)",
+        "priceSm": "14 (Eggplant)",
+        "priceLg": "16 (Veal/Chicken)",
         "note": "add fries, onion rings or house salad for +$5"
       },
       {
