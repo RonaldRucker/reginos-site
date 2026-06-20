@@ -1,88 +1,244 @@
 [
   {
-    "title": "Vini Rossi",
-    "subtitle": "Red Wines",
-    "description": "Our cellar features carefully selected wines from Italy's finest regions",
+    "title": "SPIRITS",
     "items": [
-      { "name": "Chianti Classico Riserva", "region": "Tuscany", "price": "14 / 52", "description": "Cherry, violet, earthy notes" },
-      { "name": "Barolo DOCG", "region": "Piedmont", "price": "22 / 85", "description": "Rose, tar, truffle, complex tannins" },
-      { "name": "Brunello di Montalcino", "region": "Tuscany", "price": "24 / 95", "description": "Dark fruit, leather, spice" },
-      { "name": "Amarone della Valpolicella", "region": "Veneto", "price": "20 / 78", "description": "Dried cherry, chocolate, tobacco" },
-      { "name": "Super Tuscan Blend", "region": "Tuscany", "price": "18 / 68", "description": "Blackberry, cassis, oak" },
-      { "name": "Montepulciano d'Abruzzo", "region": "Abruzzo", "price": "11 / 42", "description": "Plum, cherry, soft tannins" },
-      { "name": "Nero d'Avola", "region": "Sicily", "price": "12 / 45", "description": "Ripe fruit, pepper, herbs" }
+      {
+        "name": "ROW ROW’S COSMO",
+        "description": "Raspberry Vodka, Razzimataz, Cranberry, & Fresh lime juices",
+        "glass": "12"
+      },
+      {
+        "name": "TAMMY’S CRUSH",
+        "description": "Orange Vodka, Grand Marnier, Triple Sec, Orange juice, & Sprite",
+        "glass": "12"
+      },
+      {
+        "name": "SHERRI’S PARADISE",
+        "description": "Malibu rum & Pink Lemonade",
+        "glass": "9"
+      },
+      {
+        "name": "SPICY BARREL",
+        "description": "Captain Morgan & Rootbeer",
+        "glass": "8"
+      },
+      {
+        "name": "SANGRIA",
+        "description": "Lambrusco, Tequila, & Cherries",
+        "glass": "10"
+      },
+      {
+        "name": "SICILIAN SUNSET",
+        "description": "Prosecco, Orange Fanta, & Cranberry juices",
+        "glass": "9"
+      },
+      {
+        "name": "ITALIAN COFFEE",
+        "description": "Frangelica, Crème De CoCoa, Emmets, & Coffee",
+        "glass": "12"
+      },
+      {
+        "name": "TITO’S WHITE RUSSIAN",
+        "description": "Titos Vodka, Kahlúa, & half-and-half",
+        "glass": "14"
+      },
+      {
+        "name": "MAKER’S MARK OLD FASHIONED",
+        "description": "Makers Mark, Bitters, & Lemon Twist",
+        "glass": "14"
+      },
+      {
+        "name": "JIM BEAM MANHATTAN",
+        "description": "Jim Beam, Sweet Vermouth, & Bitters",
+        "glass": "12"
+      },
+      {
+        "name": "SAPPHIRE DIRTY MARTINI",
+        "description": "Gin, Dry Vermouth, & Stuffed Queen Olives",
+        "glass": "14"
+      }
     ]
   },
   {
-    "title": "Vini Bianchi",
-    "subtitle": "White Wines",
+    "title": "REDS",
     "items": [
-      { "name": "Pinot Grigio", "region": "Friuli", "price": "12 / 45", "description": "Crisp, citrus, mineral" },
-      { "name": "Gavi di Gavi DOCG", "region": "Piedmont", "price": "14 / 52", "description": "Lemon, almond, honeysuckle" },
-      { "name": "Vermentino di Sardegna", "region": "Sardinia", "price": "13 / 48", "description": "Tropical, herbal, saline finish" },
-      { "name": "Greco di Tufo", "region": "Campania", "price": "14 / 52", "description": "Peach, pear, almond" },
-      { "name": "Soave Classico", "region": "Veneto", "price": "11 / 42", "description": "Apple, white flowers, fresh" },
-      { "name": "Falanghina", "region": "Campania", "price": "12 / 45", "description": "Citrus, spice, honey notes" }
+      {
+        "name": "ALAMOS MALBEC",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "30"
+      },
+      {
+        "name": "LAYER CAKE PINOT NOIR",
+        "description": "",
+        "glass": "10",
+        "bottle": "35"
+      },
+      {
+        "name": "VALPOLICELLA",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "30"
+      },
+      {
+        "name": "FETZER MERLOT",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "30"
+      },
+      {
+        "name": "GABBIANO CHIANTI CLASSICO",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "30"
+      },
+      {
+        "name": "LAMBRUSCO",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "30"
+      },
+      {
+        "name": "BONANZA CABERNET SAUVIGNON",
+        "description": "",
+        "glass": "10",
+        "bottle": "40"
+      },
+      {
+        "name": "MELOMI PINOT NOIR",
+        "description": "",
+        "glass": "10",
+        "bottle": "35"
+      },
+      {
+        "name": "LOUIS M MARTINI CABERNET SAUVIGNON",
+        "description": "",
+        "glass": "",
+        "bottle": "39"
+      },
+      {
+        "name": "BELL’AGIO BASKET CHIANTI",
+        "description": "",
+        "glass": "",
+        "bottle": "35"
+      }
     ]
   },
   {
-    "title": "Spumante & Rosé",
-    "subtitle": "Sparkling & Rosé",
+    "title": "WHITES",
     "items": [
-      { "name": "Prosecco Superiore DOCG", "region": "Veneto", "price": "12 / 48", "description": "Green apple, pear, bubbles" },
-      { "name": "Franciacorta Brut", "region": "Lombardy", "price": "18 / 72", "description": "Toast, citrus, elegant mousse" },
-      { "name": "Rosé di Toscana", "region": "Tuscany", "price": "13 / 50", "description": "Strawberry, floral, refreshing" },
-      { "name": "Lambrusco", "region": "Emilia-Romagna", "price": "11 / 42", "description": "Berry, light fizz, slightly sweet" }
+      {
+        "name": "ZENATO PINOT GRIGIO",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "30"
+      },
+      {
+        "name": "PROPHECY CHARDONNARY",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "30"
+      },
+      {
+        "name": "FESS PARKER RIESLING",
+        "description": "",
+        "glass": "10",
+        "bottle": "35"
+      },
+      {
+        "name": "PROVERB PINOT GRIGIO",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "30"
+      },
+      {
+        "name": "BENVOLIO PROSECCO",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "30"
+      },
+      {
+        "name": "BAREFOOT MOSCATO",
+        "description": "",
+        "glass": "9.5"
+      }
     ]
   },
   {
-    "title": "Cocktails della Casa",
-    "subtitle": "House Cocktails",
+    "title": "BLUSH",
     "items": [
-      { "name": "Negroni Classico", "price": "16", "description": "Gin, Campari, sweet vermouth, orange peel" },
-      { "name": "Aperol Spritz", "price": "14", "description": "Aperol, prosecco, soda, orange slice" },
-      { "name": "Limoncello Martini", "price": "15", "description": "House limoncello, vodka, lemon, sugar rim" },
-      { "name": "Espresso Martini", "price": "16", "description": "Vodka, Kahlúa, fresh espresso, coffee beans" },
-      { "name": "Bellini", "price": "14", "description": "White peach purée, prosecco" },
-      { "name": "Americano", "price": "14", "description": "Campari, sweet vermouth, soda, orange" },
-      { "name": "The Godfather", "price": "18", "description": "Scotch, amaretto, orange twist" },
-      { "name": "Italian Margarita", "price": "15", "description": "Tequila, amaretto, lime, orange liqueur" }
+      {
+        "name": "SUTTER HOME WHITE ZINFANDEL",
+        "description": "",
+        "glass": "9.5",
+        "bottle": "25"
+      },
+      {
+        "name": "LANCERS ROSE",
+        "description": "",
+        "glass": "",
+        "bottle": "25"
+      }
     ]
   },
   {
-    "title": "Aperitivi & Digestivi",
-    "subtitle": "Before & After Dinner",
+    "title": "IMPORTED BEER",
     "items": [
-      { "name": "Campari", "price": "10", "description": "Classic Italian bitter" },
-      { "name": "Aperol", "price": "10", "description": "Light, bittersweet aperitif" },
-      { "name": "Amaro Montenegro", "price": "12", "description": "Aromatic herbal digestif" },
-      { "name": "Fernet Branca", "price": "12", "description": "Bold, minty bitter" },
-      { "name": "Limoncello", "price": "10", "description": "House-made lemon liqueur, chilled" },
-      { "name": "Sambuca", "price": "10", "description": "Anise-flavored, with coffee beans" },
-      { "name": "Grappa Riserva", "price": "14", "description": "Aged grape pomace spirit" },
-      { "name": "Vin Santo", "price": "14", "description": "Sweet dessert wine, served with biscotti" }
+      {
+        "name": "CORONA",
+        "description": "",
+        "glass": "6"
+      },
+      {
+        "name": "HEINEKEN",
+        "description": "",
+        "glass": "6"
+      },
+      {
+        "name": "KILLIAN’S IRISH RED",
+        "description": "",
+        "glass": "6"
+      },
+      {
+        "name": "PERONI",
+        "description": "",
+        "glass": "6"
+      },
+      {
+        "name": "YUENGLING",
+        "description": "",
+        "glass": "6"
+      }
     ]
   },
   {
-    "title": "Birra Italiana",
-    "subtitle": "Italian Beer",
+    "title": "DOMESTIC BEER",
     "items": [
-      { "name": "Peroni Nastro Azzurro", "price": "8", "description": "Crisp Italian lager" },
-      { "name": "Moretti", "price": "8", "description": "Golden, balanced pilsner" },
-      { "name": "Menabrea", "price": "9", "description": "Premium craft lager from Piedmont" },
-      { "name": "Seasonal Italian Craft", "price": "10", "description": "Ask your server" }
-    ]
-  },
-  {
-    "title": "Bevande Analcoliche",
-    "subtitle": "Non-Alcoholic",
-    "items": [
-      { "name": "San Pellegrino", "price": "6", "description": "Sparkling mineral water" },
-      { "name": "Acqua Panna", "price": "6", "description": "Still natural spring water" },
-      { "name": "Limonata", "price": "5", "description": "Fresh-squeezed Italian lemonade" },
-      { "name": "Aranciata Rossa", "price": "5", "description": "Blood orange soda" },
-      { "name": "Espresso", "price": "4", "description": "Double shot, Italian roast" },
-      { "name": "Cappuccino", "price": "6", "description": "Traditional, served until 11am" }
+      {
+        "name": "BUDWEISER",
+        "description": "",
+        "glass": "5"
+      },
+      {
+        "name": "BUDLIGHT",
+        "description": "",
+        "glass": "5"
+      },
+      {
+        "name": "MILLER LITE",
+        "description": "",
+        "glass": "5"
+      },
+      {
+        "name": "COORS LIGHT",
+        "description": "",
+        "glass": "5"
+      },
+      {
+        "name": "MICHELOB ULTRA",
+        "description": "",
+        "glass": "5"
+      }
     ]
   }
 ]
