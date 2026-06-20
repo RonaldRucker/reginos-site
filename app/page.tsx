@@ -84,12 +84,12 @@ export default function HomePage() {
               </Button>
             </div>
             <div className="relative">
-              <div className="aspect-[4/5] relative rounded-lg overflow-hidden">
+              <div className="aspect-[3/2] relative rounded-lg overflow-hidden">
                 <Image
                   src="/images/owners.jpg"
                   alt="Father and son"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg">
