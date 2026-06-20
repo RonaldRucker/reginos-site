@@ -56,8 +56,7 @@ export default function MenuPage() {
           {menuData.map((section) => (
             <div key={section.title} className="mb-20">
               <div className="text-center mb-10">
-                <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-1">{section.title}</h2>
-                <p className="text-primary tracking-[0.2em] uppercase text-sm">{section.subtitle}</p>
+                <h2 className="font-serif text-3xl md:text-4xl text-foreground">{section.title}</h2>
               </div>
 
               <div className="space-y-8">
@@ -74,7 +73,12 @@ export default function MenuPage() {
                       </div>
                       <p className="text-muted-foreground text-sm mt-1 leading-relaxed">{item.description}</p>
                     </div>
-                    <p className="font-serif text-xl text-primary shrink-0">${item.price}</p>
+                    <p className="font-serif text-xl text-primary shrink-0">
+                      {"priceLg" in item && item.priceLg
+                        ? `Sm $${item.priceSm} / Lg $${item.priceLg}`
+                        : `$${item.priceSm}`
+                      }
+                    </p>
                   </div>
                 ))}
               </div>

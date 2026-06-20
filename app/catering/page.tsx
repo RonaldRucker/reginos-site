@@ -5,61 +5,13 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Check, Users, Building2, Heart, Briefcase } from "lucide-react"
+import { Users, Building2, Heart, Briefcase } from "lucide-react"
+import cateringData from "@/data/catering.json"
 
 export const metadata: Metadata = {
   title: "Catering | Regino's Italian Restaurant",
   description: "Bring authentic Italian cuisine to your special events. Full-service catering for weddings, corporate events, and private parties.",
 }
-
-const cateringPackages = [
-  {
-    name: "Antipasto Package",
-    price: "From $25/person",
-    description: "Perfect for cocktail parties and receptions",
-    includes: [
-      "Assorted bruschetta platter",
-      "Imported Italian meats and cheeses",
-      "Marinated vegetables",
-      "Olive and artichoke selection",
-      "Fresh bread and focaccia",
-      "Serving utensils included",
-    ],
-    minGuests: 20,
-  },
-  {
-    name: "Family Style Dinner",
-    price: "From $55/person",
-    description: "Our most popular package - classic Italian hospitality",
-    includes: [
-      "Choice of 2 antipasti",
-      "House salad",
-      "Choice of 2 pasta dishes",
-      "Choice of 1 main course",
-      "Seasonal vegetables",
-      "Fresh bread service",
-      "Tiramisu or Panna Cotta",
-    ],
-    minGuests: 30,
-    featured: true,
-  },
-  {
-    name: "Grand Celebration",
-    price: "From $85/person",
-    description: "Full service for your most important occasions",
-    includes: [
-      "Passed hors d&apos;oeuvres (choice of 4)",
-      "Antipasto display station",
-      "Soup or salad course",
-      "Choice of 3 pasta dishes",
-      "Choice of 2 main courses",
-      "Vegetable sides",
-      "Dessert station with 3 selections",
-      "Coffee and tea service",
-    ],
-    minGuests: 50,
-  },
-]
 
 const eventTypes = [
   {
@@ -158,49 +110,44 @@ export default function CateringPage() {
         </div>
       </section>
 
-      {/* Catering Packages */}
+      {/* Catering Menu */}
       <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Our Packages</p>
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Catering Menus</h2>
+            <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">What We Offer</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Catering Menu</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Choose from our signature packages or work with our chef to create a custom menu for your event.
+              Serving sizes are approximate. Contact us to build a custom menu for your event.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {cateringPackages.map((pkg, index) => (
-              <Card 
-                key={index} 
-                className={`p-8 flex flex-col ${pkg.featured ? 'ring-2 ring-primary bg-card' : 'bg-card'}`}
-              >
-                {pkg.featured && (
-                  <p className="text-xs font-medium text-primary tracking-wide uppercase mb-4">
-                    Most Popular
-                  </p>
-                )}
-                <h3 className="font-serif text-2xl text-card-foreground mb-2">{pkg.name}</h3>
-                <p className="text-2xl font-serif text-primary mb-2">{pkg.price}</p>
-                <p className="text-muted-foreground text-sm mb-6">{pkg.description}</p>
-                
-                <div className="flex-1">
-                  <p className="text-sm font-medium text-card-foreground mb-3">Includes:</p>
-                  <ul className="space-y-2">
-                    {pkg.includes.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <Check className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <p className="text-xs text-muted-foreground mt-6 pt-4 border-t border-border">
-                  Minimum {pkg.minGuests} guests
-                </p>
-              </Card>
-            ))}
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead>
+                <tr className="border-b-2 border-border">
+                  <th className="text-left py-3 pr-6 font-sans text-xs tracking-[0.15em] uppercase text-muted-foreground font-medium">Item</th>
+                  <th className="text-center py-3 px-4 font-sans text-xs tracking-[0.15em] uppercase text-muted-foreground font-medium whitespace-nowrap">Small</th>
+                  <th className="text-center py-3 px-4 font-sans text-xs tracking-[0.15em] uppercase text-muted-foreground font-medium whitespace-nowrap">Large</th>
+                  <th className="text-left py-3 pl-6 font-sans text-xs tracking-[0.15em] uppercase text-muted-foreground font-medium">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cateringData.map((row, i) => (
+                  <tr key={i} className="border-b border-border">
+                    <td className="py-5 pr-6 font-serif text-lg text-foreground">{row.item}</td>
+                    <td className="py-5 px-4 text-center text-muted-foreground text-sm">
+                      {"smallServings" in row ? row.smallServings : "—"}
+                    </td>
+                    <td className="py-5 px-4 text-center text-muted-foreground text-sm">
+                      {"largeServings" in row ? row.largeServings : "—"}
+                    </td>
+                    <td className="py-5 pl-6 text-muted-foreground text-sm">
+                      {"notes" in row ? row.notes : ""}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

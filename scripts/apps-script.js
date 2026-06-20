@@ -17,7 +17,7 @@
 //       Event type: On change
 // ============================================================
 
-const GITHUB_TOKEN = 'YOUR_GITHUB_TOKEN_HERE'
+const GITHUB_TOKEN = 'YOUR_GITHUB_Tit OKEN_HERE'
 const GITHUB_OWNER = 'RonaldRucker'
 const GITHUB_REPO  = 'reginos-site'
 
@@ -33,19 +33,21 @@ function syncToGitHub() {
 
   const ss = SpreadsheetApp.getActiveSpreadsheet()
 
-  const menuJSON  = JSON.stringify(buildMenuData(ss.getSheetByName('Menu')), null, 2)
-  const drinksJSON = JSON.stringify(buildDrinksData(ss.getSheetByName('Drinks')), null, 2)
+  const menuJSON     = JSON.stringify(buildMenuData(ss.getSheetByName('Food Menu')), null, 2)
+  const drinksJSON   = JSON.stringify(buildDrinksData(ss.getSheetByName('Drink Menu')), null, 2)
+  const cateringJSON = JSON.stringify(buildCateringData(ss.getSheetByName('Catering')), null, 2)
 
-  pushToGitHub('data/menu.json',   menuJSON,   'Update menu data from Google Sheets')
-  pushToGitHub('data/drinks.json', drinksJSON, 'Update drinks data from Google Sheets')
+  pushToGitHub('data/menu.json',     menuJSON,     'Update menu data from Google Sheets')
+  pushToGitHub('data/drinks.json',   drinksJSON,   'Update drinks data from Google Sheets')
+  pushToGitHub('data/catering.json', cateringJSON, 'Update catering data from Google Sheets')
 }
 
 // ------------------------------------------------------------
-// Build menu.json structure from the Menu tab
-// Columns: A=Section  B=Subtitle  C=Name  D=Description  E=Price  F=Note
+// Build menu.json from the Food Menu tab
+// Columns: A=Section  B=Name  C=Description  D=Price Sm  E=Price Lg  F=Note
 // ------------------------------------------------------------
 function buildMenuData(sheet) {
-  const rows = sheet.getDataRange().getValues().slice(1) // skip header
+  const rows = sheet.getDataRange().getValues().slice(1)
   const sections = {}
 
   rows.forEach(function(row) {
@@ -53,14 +55,16 @@ function buildMenuData(sheet) {
     if (!section) return
 
     if (!sections[section]) {
-      sections[section] = { title: section, subtitle: String(row[1] || ''), items: [] }
+      sections[section] = { title: section, items: [] }
     }
 
     const item = {
-      name:        String(row[2] || ''),
-      description: String(row[3] || ''),
-      price:       String(row[4] || ''),
+      name:        String(row[1] || ''),
+      description: String(row[2] || ''),
+      priceSm:     String(row[3] || ''),
     }
+    const priceLg = String(row[4] || '').trim()
+    if (priceLg) item.priceLg = priceLg
     const note = String(row[5] || '').trim()
     if (note) item.note = note
 
@@ -71,11 +75,11 @@ function buildMenuData(sheet) {
 }
 
 // ------------------------------------------------------------
-// Build drinks.json structure from the Drinks tab
-// Columns: A=Section  B=Subtitle  C=Section Description  D=Name  E=Region  F=Description  G=Price
+// Build drinks.json from the Drink Menu tab
+// Columns: A=Section  B=Name  C=Description  D=Glass  E=Bottle  F=Note
 // ------------------------------------------------------------
 function buildDrinksData(sheet) {
-  const rows = sheet.getDataRange().getValues().slice(1) // skip header
+  const rows = sheet.getDataRange().getValues().slice(1)
   const sections = {}
 
   rows.forEach(function(row) {
@@ -83,23 +87,49 @@ function buildDrinksData(sheet) {
     if (!section) return
 
     if (!sections[section]) {
-      sections[section] = { title: section, subtitle: String(row[1] || ''), items: [] }
-      const sectionDesc = String(row[2] || '').trim()
-      if (sectionDesc) sections[section].description = sectionDesc
+      sections[section] = { title: section, items: [] }
     }
 
     const item = {
-      name:        String(row[3] || ''),
-      description: String(row[5] || ''),
-      price:       String(row[6] || ''),
+      name:        String(row[1] || ''),
+      description: String(row[2] || ''),
+      glass:       String(row[3] || ''),
     }
-    const region = String(row[4] || '').trim()
-    if (region) item.region = region
+    const bottle = String(row[4] || '').trim()
+    if (bottle) item.bottle = bottle
+    const note = String(row[5] || '').trim()
+    if (note) item.note = note
 
     sections[section].items.push(item)
   })
 
   return Object.values(sections)
+}
+
+// ------------------------------------------------------------
+// Build catering.json from the Catering tab
+// Columns: A=Item  B=Small Servings  C=Large Servings  D=Options / Notes
+// ------------------------------------------------------------
+function buildCateringData(sheet) {
+  const rows = sheet.getDataRange().getValues().slice(1)
+  const items = []
+
+  rows.forEach(function(row) {
+    const item = String(row[0] || '').trim()
+    if (!item) return
+
+    const entry = { item: item }
+    const small = String(row[1] || '').trim()
+    const large = String(row[2] || '').trim()
+    const notes = String(row[3] || '').trim()
+    if (small) entry.smallServings = small
+    if (large) entry.largeServings = large
+    if (notes) entry.notes = notes
+
+    items.push(entry)
+  })
+
+  return items
 }
 
 // ------------------------------------------------------------
@@ -113,7 +143,6 @@ function pushToGitHub(path, content, message) {
     'Content-Type': 'application/json',
   }
 
-  // Get current file SHA (required by GitHub API to update a file)
   const getRes = UrlFetchApp.fetch(apiUrl, { headers: headers, muteHttpExceptions: true })
   const sha = JSON.parse(getRes.getContentText()).sha
 

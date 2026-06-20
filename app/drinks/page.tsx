@@ -50,34 +50,35 @@ export default function DrinksPage() {
               Our sommelier is happy to assist with wine pairings for your meal.
               <br />
               Wine prices shown as Glass / Bottle. Half bottles available for select wines.
+              <br />
+              Corkage fee: $35 per bottle (limit 2 per table).
             </p>
           </div>
 
           {drinksData.map((section) => (
             <div key={section.title} className="mb-20">
               <div className="text-center mb-10">
-                <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-1">{section.title}</h2>
-                <p className="text-primary tracking-[0.2em] uppercase text-sm">{section.subtitle}</p>
-                {"description" in section && section.description && (
-                  <p className="text-muted-foreground text-sm mt-3">{section.description}</p>
-                )}
+                <h2 className="font-serif text-3xl md:text-4xl text-foreground">{section.title}</h2>
               </div>
 
               <div className="space-y-6">
                 {section.items.map((item, itemIndex) => (
                   <div key={itemIndex} className="flex justify-between items-start gap-4 border-b border-border pb-6">
                     <div className="flex-1">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <h3 className="font-serif text-xl text-foreground">{item.name}</h3>
-                        {"region" in item && item.region && (
-                          <span className="text-xs bg-muted text-muted-foreground px-2 py-0.5 rounded">
-                            {item.region}
-                          </span>
-                        )}
-                      </div>
+                      <h3 className="font-serif text-xl text-foreground">{item.name}</h3>
                       <p className="text-muted-foreground text-sm mt-1">{item.description}</p>
+                      {"note" in item && item.note && (
+                        <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded mt-1 inline-block">
+                          {item.note}
+                        </span>
+                      )}
                     </div>
-                    <p className="font-serif text-lg text-primary shrink-0">${item.price}</p>
+                    <p className="font-serif text-lg text-primary shrink-0">
+                      {"bottle" in item && item.bottle
+                        ? `$${item.glass} / $${item.bottle}`
+                        : `$${item.glass}`
+                      }
+                    </p>
                   </div>
                 ))}
               </div>

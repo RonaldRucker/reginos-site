@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Lato } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const playfair = Playfair_Display({ 
@@ -35,7 +34,6 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${lato.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
