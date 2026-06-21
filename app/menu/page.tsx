@@ -34,7 +34,7 @@ export default function MenuPage() {
             <h1 className="font-serif text-5xl md:text-6xl text-background mb-4">
               Our Menu
             </h1>
-            <p className="text-background/90 max-w-xl mx-auto">
+            <p className="hidden sm:block text-background/90 max-w-xl mx-auto">
               Traditional recipes passed down through four generations, made with the finest imported
               and locally sourced ingredients.
             </p>

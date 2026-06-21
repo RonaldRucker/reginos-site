@@ -10,27 +10,27 @@ const navLinks = [
   { href: "/menu", label: "Menu" },
   { href: "/drinks", label: "Drinks" },
   { href: "/catering", label: "Catering" },
-  { href: "/history", label: "Our Story" },
+  // { href: "/history", label: "Our Story" },
 ]
 
 export function Navigation() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-foreground border-b border-background/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Top bar */}
         <div className="flex items-center justify-between h-20">
           <Link href="/" onClick={() => setOpen(false)} className="flex flex-col items-start">
-            <Image src="/images/logo-text.png" alt="Regino's" width={140} height={28} className="h-7 w-auto" priority />
-            <span className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase -mt-0.5">Italian Restaurant</span>
+            <Image src="/images/logo-text.png" alt="Regino's" width={140} height={28} className="h-7 w-auto" style={{ width: 'auto' }} priority />
+            <span className="text-[10px] tracking-[0.2em] text-white/50 uppercase -mt-0.5">Italian Restaurant</span>
           </Link>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="text-sm tracking-wide uppercase text-foreground/80 hover:text-primary transition-colors">
+              <Link key={link.href} href={link.href} className="text-sm tracking-wide uppercase text-white/75 hover:text-white transition-colors">
                 {link.label}
               </Link>
             ))}
@@ -43,7 +43,7 @@ export function Navigation() {
           {/* Hamburger button */}
           <button
             type="button"
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-white"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -53,12 +53,12 @@ export function Navigation() {
 
         {/* Mobile menu — lives inside the header so it inherits z-50 */}
         {open && (
-          <nav className="md:hidden border-t border-border py-4 flex flex-col">
+          <nav className="md:hidden border-t border-white/10 py-4 flex flex-col">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm tracking-wide uppercase text-foreground/80 py-4 border-b border-border last:border-0"
+                className="text-sm tracking-wide uppercase text-white/75 py-4 border-b border-white/10 last:border-0"
                 onClick={() => setOpen(false)}
               >
                 {link.label}

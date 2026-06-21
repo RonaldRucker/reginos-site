@@ -17,6 +17,7 @@ const lato = Lato({
 
 export const viewport: Viewport = {
   themeColor: '#faf8f4',
+  viewportFit: 'cover',
 }
 
 export const metadata: Metadata = {

@@ -1,85 +1,71 @@
-import Link from "next/link"
 import Image from "next/image"
-import { MapPin, Phone, Clock, Mail } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Brand */}
-          <div>
-            <div className="mb-6">
-              <Image
-                src="/images/logo.png"
-                alt="Regino's Italian Restaurant"
-                width={180}
-                height={63}
-                className="h-16 w-auto"
-              />
-            </div>
-            <p className="text-background/70 text-sm leading-relaxed">
-              Four generations of authentic Italian cuisine. Serving our community with love and tradition since 1946.
-            </p>
-          </div>
+    <footer className="bg-foreground text-background" style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}>
+      <div className="h-[3px] bg-primary" />
+
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 pt-16 pb-10">
+
+        {/* Logo + tagline */}
+        <div className="text-center mb-12 pb-12 border-b border-background/10">
+          <Image
+            src="/images/logo.png"
+            alt="Regino's Italian Restaurant"
+            width={240}
+            height={84}
+            className="h-16 w-auto mx-auto mb-4"
+          />
+          <p className="text-background/50 text-xs tracking-[0.3em] uppercase">
+            Authentic Italian Since 1947
+          </p>
+        </div>
+
+        {/* Two columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-12">
 
           {/* Hours */}
           <div>
-            <h3 className="font-serif text-lg mb-4">Hours</h3>
-            <div className="flex items-start gap-3 text-background/70 text-sm">
-              <Clock className="h-4 w-4 mt-0.5 shrink-0" />
-              <div className="space-y-1">
-                <p>Mon, Wed–Thu: 11am – 9:30pm</p>
-                <p>Fri–Sat: 11am – 10:30pm</p>
-                <p>Sun: 12pm – 9:30pm</p>
-                <p>Tue: Closed</p>
-              </div>
+            <p className="text-primary text-xs tracking-[0.25em] uppercase font-medium mb-5">Hours</p>
+            <div className="space-y-2 text-sm text-background/65">
+              {[
+                { days: "Mon, Wed – Thu", hours: "11am – 9:30pm" },
+                { days: "Fri – Sat",      hours: "11am – 10:30pm" },
+                { days: "Sunday",         hours: "12pm – 9:30pm" },
+                { days: "Tuesday",        hours: "Closed" },
+              ].map(({ days, hours }) => (
+                <div key={days} className="flex justify-between gap-4">
+                  <span>{days}</span>
+                  <span className={hours === "Closed" ? "text-background/35" : "text-background/90"}>{hours}</span>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Contact */}
+          {/* Visit */}
           <div>
-            <h3 className="font-serif text-lg mb-4">Contact</h3>
-            <div className="space-y-3 text-background/70 text-sm">
-              <div className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <p>3816 E Little Creek Rd <br />Norfolk, VA 23518</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="h-4 w-4 shrink-0" />
-                <p>(757) 588-4300</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="h-4 w-4 shrink-0" />
-                <p>info@reginositalian.com</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-serif text-lg mb-4">Quick Links</h3>
-            <div className="space-y-2 text-sm">
-              <Link href="/menu" className="block text-background/70 hover:text-background transition-colors">
-                Menu
-              </Link>
-              <Link href="/drinks" className="block text-background/70 hover:text-background transition-colors">
-                Drinks
-              </Link>
-              <Link href="/catering" className="block text-background/70 hover:text-background transition-colors">
-                Catering
-              </Link>
-              <Link href="/history" className="block text-background/70 hover:text-background transition-colors">
-                Our Story
-              </Link>
+            <p className="text-primary text-xs tracking-[0.25em] uppercase font-medium mb-5">Visit Us</p>
+            <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-background/65">
+              <a
+                href="https://maps.google.com/?q=3816+E+Little+Creek+Rd+Norfolk+VA+23518"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-background transition-colors leading-relaxed"
+              >
+                3816 E Little Creek Rd, Norfolk, VA 23518
+              </a>
+              <a href="tel:7575884300" className="hover:text-background transition-colors">
+                (757) 588-4300
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-background/20 mt-12 pt-8 text-center text-background/50 text-sm">
-          <p>&copy; {new Date().getFullYear()} Regino&apos;s Italian Restaurant. All rights reserved.</p>
-          <p className="mt-2">Proudly serving authentic Italian cuisine since 1947</p>
+        {/* Bottom bar */}
+        <div className="border-t border-background/10 pt-8 text-center text-background/35 text-xs tracking-wide">
+          <p>&copy; {new Date().getFullYear()} Regino&apos;s Italian Restaurant &middot; All rights reserved</p>
         </div>
+
       </div>
     </footer>
   )

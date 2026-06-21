@@ -61,8 +61,8 @@ export default function CateringPage() {
             <h1 className="font-serif text-5xl md:text-6xl text-background mb-4">
               Catering
             </h1>
-            <p className="text-background/90 max-w-xl mx-auto">
-              Bring the authentic flavors of Regino&apos;s to your special occasions. 
+            <p className="hidden sm:block text-background/90 max-w-xl mx-auto">
+              Bring the authentic flavors of Regino&apos;s to your special occasions.
               From intimate gatherings to grand celebrations.
             </p>
           </div>

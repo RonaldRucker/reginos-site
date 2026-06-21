@@ -49,7 +49,7 @@ export default function DrinksPage() {
             <h1 className="font-serif text-5xl md:text-6xl text-background mb-4">
               Wine &amp; Drinks
             </h1>
-            <p className="text-background/90 max-w-xl mx-auto">
+            <p className="hidden sm:block text-background/90 max-w-xl mx-auto">
               Explore our curated selection of premium wines, beers, and signature cocktails.
             </p>
           </div>

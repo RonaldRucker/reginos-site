@@ -7,6 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   allowedDevOrigins: ['10.0.4.29'],
+  devIndicators: false,
 }
 
 export default nextConfig

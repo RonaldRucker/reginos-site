@@ -22,7 +22,7 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[56vw] min-h-[500px] max-h-screen">
+      <section className="relative h-[100dvh] sm:h-[56vw] sm:min-h-[500px] sm:max-h-screen">
         <div className="absolute inset-0">
           <Image
             src="/images/spagetti_cover.jpg"
@@ -84,12 +84,12 @@ export default function HomePage() {
                 We invite you to be a part of our story — 
                 and to experience the hearty, homemade Italian dishes that have made Regino’s a Norfolk tradition.
               </p> */}
-              <Button asChild variant="outline" className="group">
+              {/* <Button asChild variant="outline" className="group">
                 <Link href="/history">
                   Discover Our Story
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
-              </Button>
+              </Button> */}
             </div>
             <div className="relative">
               <div className="aspect-[3/2] relative rounded-lg overflow-hidden">
@@ -204,7 +204,7 @@ export default function HomePage() {
       </section> */}
 
       {/* Visit Us CTA */}
-      <section className="py-12 md:py-24 px-4">
+      {/* <section className="py-12 md:py-24 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Visit Us</p>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Walk-Ins Welcome</h2>
@@ -219,7 +219,7 @@ export default function HomePage() {
               Call (757) 588-4300
             </Button>
           </div>
-          <div className="mt-6 md:mt-8 inline-grid grid-cols-2 gap-x-6 sm:gap-x-10 gap-y-2 text-sm text-left">
+           <div className="mt-6 md:mt-8 inline-grid grid-cols-2 gap-x-6 sm:gap-x-10 gap-y-2 text-sm text-left">
             {[
               { day: "Monday",    hours: "11:00 am – 9:30 pm" },
               { day: "Tuesday",   hours: "Closed" },
@@ -236,7 +236,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
