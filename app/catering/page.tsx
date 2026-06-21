@@ -42,7 +42,7 @@ export default function CateringPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[50vh] min-h-[400px]">
+      <section className="relative h-[35vh] sm:h-[50vh] min-h-[240px] sm:min-h-[400px]">
         <div className="absolute inset-0">
           <Image
             src="/images/catering-hero.jpg"
@@ -111,17 +111,39 @@ export default function CateringPage() {
       </section> */}
 
       {/* Catering Menu */}
-      <section className="py-20 px-4">
+      <section className="py-10 md:py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">What We Offer</p>
-            {/* <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Catering Menu</h2> */}
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Serving sizes are approximate. Contact us to build a custom menu for your event.
             </p>
           </div>
 
-          <div className="overflow-x-auto">
+          {/* Mobile: card layout */}
+          <div className="md:hidden space-y-4">
+            {cateringData.map((row, i) => (
+              <div key={i} className="border border-border rounded-lg p-4">
+                <h3 className="font-serif text-lg text-foreground mb-2">{row.item}</h3>
+                <div className="flex gap-6 text-sm mb-1.5">
+                  <div>
+                    <span className="font-medium text-foreground">Small:</span>{" "}
+                    <span className="text-muted-foreground">{"smallServings" in row ? row.smallServings : "—"}</span>
+                  </div>
+                  <div>
+                    <span className="font-medium text-foreground">Large:</span>{" "}
+                    <span className="text-muted-foreground">{"largeServings" in row ? row.largeServings : "—"}</span>
+                  </div>
+                </div>
+                {"notes" in row && row.notes && (
+                  <p className="text-muted-foreground text-sm mt-1">{row.notes}</p>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop: table layout */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr className="border-b-2 border-border">
@@ -150,7 +172,7 @@ export default function CateringPage() {
             </table>
           </div>
 
-          <p className="text-center text-muted-foreground text-sm mt-10">
+          <p className="text-center text-muted-foreground text-sm mt-8 md:mt-10">
             For pricing and more details, please call us at <a href="tel:7575884300" className="text-primary hover:underline">(757) 588-4300</a>.
           </p>
         </div>
@@ -197,7 +219,7 @@ export default function CateringPage() {
       </section> */}
 
       {/* CTA Section */}
-      <section className="py-24 px-4 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-24 px-4 bg-primary text-primary-foreground">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl mb-6">Ready to Plan Your Event?</h2>
           <p className="text-primary-foreground/90 mb-8 leading-relaxed">

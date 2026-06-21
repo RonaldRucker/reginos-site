@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Playfair_Display, Lato } from 'next/font/google'
 import './globals.css'
 
@@ -14,6 +14,10 @@ const lato = Lato({
   variable: '--font-lato',
   display: 'swap',
 })
+
+export const viewport: Viewport = {
+  themeColor: '#faf8f4',
+}
 
 export const metadata: Metadata = {
   title: "Regino's Italian Restaurant | Authentic Italian Since 1946",

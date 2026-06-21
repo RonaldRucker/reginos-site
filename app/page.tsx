@@ -58,9 +58,9 @@ export default function HomePage() {
       </section>
 
       {/* Welcome Section */}
-      <section className="py-24 px-4">
+      <section className="py-12 md:py-24 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Welcome to Our Table</p>
               <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6 text-balance">
@@ -92,7 +92,7 @@ export default function HomePage() {
                   className="object-cover object-center"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg">
+              <div className="hidden md:block absolute md:-bottom-6 md:-left-6 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg">
                 <p className="font-serif text-4xl">80</p>
                 <p className="text-sm tracking-wide uppercase">Years of Tradition</p>
               </div>
@@ -102,14 +102,14 @@ export default function HomePage() {
       </section>
 
       {/* Quick Links */}
-      <section className="py-20 bg-muted">
+      <section className="py-12 md:py-20 bg-muted">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Explore</p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground">What We Offer</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="group p-8 text-center hover:shadow-lg transition-shadow bg-card">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            <Card className="group p-6 md:p-8 text-center hover:shadow-lg transition-shadow bg-card">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <UtensilsCrossed className="h-8 w-8 text-primary" />
               </div>
@@ -122,7 +122,7 @@ export default function HomePage() {
               </Button>
             </Card>
 
-            <Card className="group p-8 text-center hover:shadow-lg transition-shadow bg-card">
+            <Card className="group p-6 md:p-8 text-center hover:shadow-lg transition-shadow bg-card">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <Wine className="h-8 w-8 text-primary" />
               </div>
@@ -135,7 +135,7 @@ export default function HomePage() {
               </Button>
             </Card>
 
-            <Card className="group p-8 text-center hover:shadow-lg transition-shadow bg-card">
+            <Card className="group p-6 md:p-8 text-center hover:shadow-lg transition-shadow bg-card">
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <PartyPopper className="h-8 w-8 text-primary" />
               </div>
@@ -152,9 +152,9 @@ export default function HomePage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-24 px-4">
+      <section className="py-12 md:py-24 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Gallery</p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">A Taste of Regino&apos;s</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -182,9 +182,9 @@ export default function HomePage() {
       </section>
 
       {/* Testimonial */}
-      <section className="py-24 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-24 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p className="font-serif text-2xl md:text-3xl leading-relaxed mb-8 italic">
+          <p className="font-serif text-xl sm:text-2xl md:text-3xl leading-relaxed mb-6 md:mb-8 italic">
             &ldquo;For three generations, my family has celebrated every milestone at Regino&apos;s.
             The food, the atmosphere, the people - it&apos;s like coming home. This isn&apos;t just a restaurant,
             it&apos;s where memories are made.&rdquo;
@@ -196,7 +196,7 @@ export default function HomePage() {
       </section>
 
       {/* Visit Us CTA */}
-      <section className="py-24 px-4">
+      <section className="py-12 md:py-24 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Visit Us</p>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Walk-Ins Welcome</h2>
@@ -211,7 +211,7 @@ export default function HomePage() {
               Call (757) 588-4300
             </Button>
           </div>
-          <div className="mt-8 inline-grid grid-cols-2 gap-x-10 gap-y-2 text-sm text-left">
+          <div className="mt-6 md:mt-8 inline-grid grid-cols-2 gap-x-6 sm:gap-x-10 gap-y-2 text-sm text-left">
             {[
               { day: "Monday",    hours: "11:00 am – 9:30 pm" },
               { day: "Tuesday",   hours: "Closed" },

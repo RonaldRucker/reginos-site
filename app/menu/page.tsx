@@ -15,7 +15,7 @@ export default function MenuPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[50vh] min-h-[400px]">
+      <section className="relative h-[35vh] sm:h-[50vh] min-h-[240px] sm:min-h-[400px]">
         <div className="absolute inset-0">
           <Image
             src="/images/menu-hero.jpg"
@@ -43,45 +43,37 @@ export default function MenuPage() {
       </section>
 
       {/* Menu Content */}
-      <section className="py-20 px-4">
+      <section className="py-10 md:py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          {/* <div className="text-center mb-16">
-            <p className="text-muted-foreground text-sm">
-              All pasta is made fresh daily in house. Gluten-free pasta available upon request.
-              <br />
-              Please inform your server of any allergies or dietary restrictions.
-            </p>
-          </div> */}
-
           {menuData.map((section) => (
-            <div key={section.title} className="mb-20">
-              <div className="text-center mb-10">
+            <div key={section.title} className="mb-12 md:mb-20">
+              <div className="text-center mb-8 md:mb-10">
                 <h2 className="font-serif text-3xl md:text-4xl text-foreground">{section.title}</h2>
                 {"sectionNote" in section && Boolean(section.sectionNote) && (
                   <p className="text-muted-foreground text-sm mt-3 max-w-2xl mx-auto">{String(section.sectionNote)}</p>
                 )}
               </div>
 
-              <div className="space-y-8">
+              <div className="space-y-6">
                 {section.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex justify-between items-start gap-4 border-b border-border pb-6">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2">
+                  <div key={itemIndex} className="border-b border-border pb-5">
+                    <div className="flex justify-between items-baseline gap-3">
+                      <div className="flex flex-wrap items-center gap-2 min-w-0">
                         <h3 className="font-serif text-xl text-foreground">{item.name}</h3>
                         {"note" in item && item.note && (
-                          <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
+                          <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded shrink-0">
                             {item.note}
                           </span>
                         )}
                       </div>
-                      <p className="text-muted-foreground text-sm mt-1 leading-relaxed">{item.description}</p>
+                      <p className="font-serif text-lg text-primary shrink-0 whitespace-nowrap">
+                        {"priceLg" in item && item.priceLg
+                          ? `Sm $${item.priceSm} / Lg $${item.priceLg}`
+                          : `$${item.priceSm}`
+                        }
+                      </p>
                     </div>
-                    <p className="font-serif text-xl text-primary shrink-0">
-                      {"priceLg" in item && item.priceLg
-                        ? `Sm $${item.priceSm} / Lg $${item.priceLg}`
-                        : `$${item.priceSm}`
-                      }
-                    </p>
+                    <p className="text-muted-foreground text-sm mt-1.5 leading-relaxed">{item.description}</p>
                   </div>
                 ))}
               </div>

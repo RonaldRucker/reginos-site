@@ -30,7 +30,7 @@ export default function DrinksPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[50vh] min-h-[400px]">
+      <section className="relative h-[35vh] sm:h-[50vh] min-h-[240px] sm:min-h-[400px]">
         <div className="absolute inset-0">
           <Image
             src="/images/drinks-hero.jpg"
@@ -57,42 +57,32 @@ export default function DrinksPage() {
       </section>
 
       {/* Drink Menu Content */}
-      <section className="py-20 px-4">
+      <section className="py-10 md:py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          {/* <div className="text-center mb-16">
-            <p className="text-muted-foreground text-sm">
-              Our sommelier is happy to assist with wine pairings for your meal.
-              <br />
-              Wine prices shown as Glass / Bottle. Half bottles available for select wines.
-              <br />
-              Corkage fee: $35 per bottle (limit 2 per table).
-            </p> 
-          </div> */}
-
           {drinksData.map((section) => (
-            <div key={section.title} className="mb-20">
-              <div className="text-center mb-10">
+            <div key={section.title} className="mb-12 md:mb-20">
+              <div className="text-center mb-8 md:mb-10">
                 <h2 className="font-serif text-3xl md:text-4xl text-foreground">{section.title}</h2>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-5">
                 {section.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex justify-between items-start gap-4 border-b border-border pb-6">
-                    <div className="flex-1">
-                      <h3 className="font-serif text-xl text-foreground">{item.name}</h3>
-                      <p className="text-muted-foreground text-sm mt-1">{item.description}</p>
-                      {item.note && (
-                        <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded mt-1 inline-block">
-                          {item.note}
-                        </span>
-                      )}
+                  <div key={itemIndex} className="border-b border-border pb-5">
+                    <div className="flex justify-between items-baseline gap-3">
+                      <h3 className="font-serif text-xl text-foreground min-w-0">{item.name}</h3>
+                      <p className="font-serif text-lg text-primary shrink-0 whitespace-nowrap">
+                        {item.bottle
+                          ? `$${item.glass} / $${item.bottle}`
+                          : `$${item.glass}`
+                        }
+                      </p>
                     </div>
-                    <p className="font-serif text-lg text-primary shrink-0">
-                      {item.bottle
-                        ? `$${item.glass} / $${item.bottle}`
-                        : `$${item.glass}`
-                      }
-                    </p>
+                    <p className="text-muted-foreground text-sm mt-1.5">{item.description}</p>
+                    {item.note && (
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded mt-1.5 inline-block">
+                        {item.note}
+                      </span>
+                    )}
                   </div>
                 ))}
               </div>

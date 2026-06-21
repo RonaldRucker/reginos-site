@@ -76,7 +76,7 @@ export default function HistoryPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px]">
+      <section className="relative h-[45vh] sm:h-[60vh] min-h-[280px] sm:min-h-[500px]">
         <div className="absolute inset-0">
           <Image
             src="/images/history-hero.jpg"
@@ -104,9 +104,9 @@ export default function HistoryPage() {
       </section>
 
       {/* Founders Story */}
-      <section className="py-24 px-4">
+      <section className="py-12 md:py-24 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="relative">
               <div className="aspect-[4/5] relative rounded-lg overflow-hidden">
                 <Image
@@ -116,7 +116,7 @@ export default function HistoryPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded shadow-lg">
+              <div className="absolute bottom-4 right-4 lg:-bottom-4 lg:-right-4 bg-primary text-primary-foreground px-6 py-3 rounded shadow-lg">
                 <p className="font-serif text-sm">Giuseppe & Maria Rossi, 1952</p>
               </div>
             </div>
@@ -155,9 +155,9 @@ export default function HistoryPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-24 px-4 bg-muted">
+      <section className="py-12 md:py-24 px-4 bg-muted">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">80 Years</p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Our Journey</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -167,7 +167,7 @@ export default function HistoryPage() {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-border" />
+            <div className="absolute left-10 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-border" />
 
             {timeline.map((event, index) => (
               <div 
@@ -177,7 +177,7 @@ export default function HistoryPage() {
                 }`}
               >
                 {/* Year badge */}
-                <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-serif text-lg z-10">
+                <div className="absolute left-10 md:left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-serif text-lg z-10">
                   {event.year.slice(2)}
                 </div>
 
@@ -197,9 +197,9 @@ export default function HistoryPage() {
       </section>
 
       {/* Today */}
-      <section className="py-24 px-4">
+      <section className="py-12 md:py-24 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">The Legacy Continues</p>
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6 text-balance">
@@ -234,7 +234,7 @@ export default function HistoryPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground px-6 py-3 rounded shadow-lg">
+              <div className="absolute bottom-4 left-4 lg:-bottom-4 lg:-left-4 bg-primary text-primary-foreground px-6 py-3 rounded shadow-lg">
                 <p className="font-serif text-sm">The Rossi Family, 2026</p>
               </div>
             </div>
@@ -243,13 +243,13 @@ export default function HistoryPage() {
       </section>
 
       {/* Values */}
-      <section className="py-24 px-4 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-24 px-4 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <p className="text-primary-foreground/80 tracking-[0.2em] uppercase text-sm mb-3">What Guides Us</p>
             <h2 className="font-serif text-3xl md:text-4xl">Our Values</h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {values.map((value, index) => (
               <div key={index} className="text-center">
                 <h3 className="font-serif text-xl mb-3">{value.title}</h3>
@@ -261,9 +261,9 @@ export default function HistoryPage() {
       </section>
 
       {/* Photo Gallery */}
-      <section className="py-24 px-4">
+      <section className="py-12 md:py-24 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Through the Years</p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Memories</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
