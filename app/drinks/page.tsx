@@ -33,7 +33,7 @@ export default function DrinksPage() {
       <section className="relative h-[35vh] sm:h-[50vh] min-h-[240px] sm:min-h-[400px]">
         <div className="absolute inset-0">
           <Image
-            src="/images/drinks-hero.jpg"
+            src="/images/wine.jpg"
             alt="Wine and Drinks"
             fill
             className="object-cover"

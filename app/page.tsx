@@ -22,20 +22,20 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[100dvh] sm:h-[56vw] sm:min-h-[500px] sm:max-h-screen">
+      <section className="relative h-[100lvh] sm:h-[56vw] sm:min-h-[500px] sm:max-h-screen">
         <div className="absolute inset-0">
           <Image
             src="/images/spagetti_cover.jpg"
             alt="Regino's Italian Restaurant"
             fill
-            className="object-cover object-[90%_70%]"
+            className="object-cover object-[70%_60%] sm:object-[90%_70%]"
             priority
           />
           <div className="absolute inset-0 bg-foreground/50" />
         </div>
-        <div className="relative h-full flex items-center justify-center text-center px-4 pt-20">
+        <div className="relative h-full flex items-center justify-center text-center px-4 pt-20 pb-28 md:pb-24">
           <div className="max-w-4xl flex flex-col items-center">
-            <p className="text-background/80 tracking-[0.3em] uppercase text-sm mb-6">
+            <p className="text-background/80 tracking-[0.3em] uppercase text-sm mb-4">
               Authentic Italian Since 1947
             </p>
             <Image
@@ -43,13 +43,9 @@ export default function HomePage() {
               alt="Regino's Italian Restaurant"
               width={600}
               height={210}
-              className="w-[280px] sm:w-[400px] md:w-[500px] lg:w-[600px] h-auto mb-8 drop-shadow-2xl"
+              className="w-[280px] sm:w-[400px] md:w-[500px] lg:w-[600px] h-auto mb-16 drop-shadow-2xl"
               priority
             />
-            <p className="text-background/90 text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed">
-              Four generations of passion, tradition, and authentic Italian flavors.
-              Where every meal is a celebration of family.
-            </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-10">
               <Link href="/menu">View Our Menu</Link>
             </Button>
