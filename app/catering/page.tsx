@@ -149,6 +149,10 @@ export default function CateringPage() {
               </tbody>
             </table>
           </div>
+
+          <p className="text-center text-muted-foreground text-sm mt-10">
+            For pricing and more details, please call us at <a href="tel:7575884300" className="text-primary hover:underline">(757) 588-4300</a>.
+          </p>
         </div>
       </section>
 
@@ -204,8 +208,8 @@ export default function CateringPage() {
             <Button size="lg" className="bg-background text-foreground hover:bg-background/90">
               Request a Quote
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              Call (212) 555-1946
+            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              Call (757) 588-4300
             </Button>
           </div>
           <p className="text-sm text-primary-foreground/70 mt-6">
