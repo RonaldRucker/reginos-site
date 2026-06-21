@@ -56,10 +56,10 @@ export default function CateringPage() {
         <div className="relative h-full flex items-center justify-center text-center px-4 pt-20">
           <div>
             <p className="text-background/90 tracking-[0.3em] uppercase text-sm mb-4">
-              Full Service Catering
+              Your Event, Our Passion
             </p>
             <h1 className="font-serif text-5xl md:text-6xl text-background mb-4">
-              Your Event, Our Passion
+              Catering
             </h1>
             <p className="text-background/90 max-w-xl mx-auto">
               Bring the authentic flavors of Regino&apos;s to your special occasions. 
@@ -70,7 +70,7 @@ export default function CateringPage() {
       </section>
 
       {/* Introduction */}
-      <section className="py-20 px-4">
+      {/* <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Since 1946</p>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6 text-balance">
@@ -87,10 +87,10 @@ export default function CateringPage() {
             Fresh ingredients, house-made pastas, and recipes passed down through four generations.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Event Types */}
-      <section className="py-20 px-4 bg-muted">
+      {/* <section className="py-20 px-4 bg-muted">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">We Cater To</p>
@@ -108,14 +108,14 @@ export default function CateringPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Catering Menu */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">What We Offer</p>
-            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Catering Menu</h2>
+            {/* <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">Catering Menu</h2> */}
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Serving sizes are approximate. Contact us to build a custom menu for your event.
             </p>
@@ -153,7 +153,7 @@ export default function CateringPage() {
       </section>
 
       {/* Additional Services */}
-      <section className="py-20 px-4 bg-muted">
+      {/* <section className="py-20 px-4 bg-muted">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Enhance Your Event</p>
@@ -190,7 +190,7 @@ export default function CateringPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-24 px-4 bg-primary text-primary-foreground">

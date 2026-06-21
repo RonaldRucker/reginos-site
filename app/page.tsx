@@ -115,7 +115,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-serif text-2xl mb-3 text-card-foreground">Our Menu</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                From classic antipasti to our legendary osso buco, experience authentic Italian cuisine made with love.
+                Homemade pasta, hand-tossed pizza, fresh seafood, parmigiana, and classic specialties — plus a full lunch menu and kids menu.
               </p>
               <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                 <Link href="/menu">View Menu</Link>
@@ -128,7 +128,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-serif text-2xl mb-3 text-card-foreground">Wine & Drinks</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Curated selection of Italian wines, craft cocktails, and refreshing beverages to complement your meal.
+                House cocktails, red, white, and blush wines, plus imported and domestic beers — the perfect complement to any meal.
               </p>
               <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                 <Link href="/drinks">View Drinks</Link>
@@ -141,7 +141,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-serif text-2xl mb-3 text-card-foreground">Catering</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Bring Regino&apos;s to your special events. Full-service catering for weddings, parties, and corporate events.
+                Bring Regino&apos;s to your next event. Pasta stations, family style entrées, antipasto, and desserts for any size gathering.
               </p>
               <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                 <Link href="/catering">Learn More</Link>
