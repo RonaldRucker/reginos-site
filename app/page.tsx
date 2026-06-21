@@ -67,15 +67,23 @@ export default function HomePage() {
                 80 Years of Italian Excellence
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Since 1947, Regino&apos;s Italian Restaurant has been the heart of Little Italy. What started as
-                a small family kitchen has grown into a beloved institution, serving generations of
-                guests with the same recipes our Nonna brought from Naples.
+                Regino’s was founded in 1947 by Gregorios “George” Mazarakis, 
+                a Greek immigrant with a passion for great food and a deep love for the community he called home. 
+                George learned the art of cooking while serving in the Greek Navy 
+                and continued to perfect his culinary talent as the personal chef for a US Army General. 
+                It was there that he mastered the skills to cook for large groups, 
+                a talent that would become the foundation of what Regino’s is known for today — 
+                big, hearty portions that leave everyone satisfied.
+              </p>
+              {/* <p className="text-muted-foreground leading-relaxed mb-8">
+                Over the years, Regino’s has become more than just a restaurant — it’s a beloved institution. 
+                Whether it’s a casual dinner with friends or a special family gathering, we’ve been proud to serve the Norfolk community for over 75 years. 
+                Today, Regino’s is still run by the Mazarakis family, who continue to welcome guests with the same warmth, hospitality, and delicious food that made us a local favorite.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Every dish tells a story. Every meal creates a memory. We invite you to become part
-                of our extended family and experience the warmth, flavors, and traditions that have
-                made us a cornerstone of the community for eight decades.
-              </p>
+                We invite you to be a part of our story — 
+                and to experience the hearty, homemade Italian dishes that have made Regino’s a Norfolk tradition.
+              </p> */}
               <Button asChild variant="outline" className="group">
                 <Link href="/history">
                   Discover Our Story
@@ -158,7 +166,7 @@ export default function HomePage() {
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Gallery</p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">A Taste of Regino&apos;s</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              From our kitchen to your table, every detail is crafted with care and tradition.
+              From our kitchen to your table, every detail is crafted with care.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -182,7 +190,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonial */}
-      <section className="py-12 md:py-24 bg-primary text-primary-foreground">
+      {/* <section className="py-12 md:py-24 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="font-serif text-xl sm:text-2xl md:text-3xl leading-relaxed mb-6 md:mb-8 italic">
             &ldquo;For three generations, my family has celebrated every milestone at Regino&apos;s.
@@ -193,7 +201,7 @@ export default function HomePage() {
             &mdash; Maria S., Guest Since 1978
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Visit Us CTA */}
       <section className="py-12 md:py-24 px-4">
