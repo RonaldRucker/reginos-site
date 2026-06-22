@@ -227,11 +227,11 @@ export default function CateringPage() {
             your vision, request a custom quote, or schedule a tasting.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-background text-foreground hover:bg-background/90">
-              Request a Quote
+            <Button asChild size="lg" className="bg-background text-foreground hover:bg-background/90">
+              <a href="mailto:info@reginositalian.com?subject=Catering%20Quote%20Request">Request a Quote</a>
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              Call (757) 588-4300
+            <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <a href="tel:+17575884300">Call (757) 588-4300</a>
             </Button>
           </div>
           <p className="text-sm text-primary-foreground/70 mt-6">

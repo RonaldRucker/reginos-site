@@ -18,8 +18,8 @@ export default function MenuPage() {
       <section className="relative h-[35vh] sm:h-[50vh] min-h-[240px] sm:min-h-[400px]">
         <div className="absolute inset-0">
           <Image
-            src="/images/menu-hero.jpg"
-            alt="Our Menu"
+            src="/images/spaghetti.jpeg"
+            alt="spaghetti"
             fill
             className="object-cover"
             priority
@@ -57,7 +57,7 @@ export default function MenuPage() {
               <div className="space-y-6">
                 {section.items.map((item, itemIndex) => (
                   <div key={itemIndex} className="border-b border-border pb-5">
-                    <div className="flex justify-between items-baseline gap-3">
+                    <div className="flex justify-between items-start gap-3">
                       <div className="flex flex-wrap items-center gap-2 min-w-0">
                         <h3 className="font-serif text-xl text-foreground">{item.name}</h3>
                         {"note" in item && item.note && (
@@ -66,12 +66,16 @@ export default function MenuPage() {
                           </span>
                         )}
                       </div>
-                      <p className="font-serif text-lg text-primary shrink-0 whitespace-nowrap">
-                        {"priceLg" in item && item.priceLg
-                          ? `Sm $${item.priceSm} / Lg $${item.priceLg}`
-                          : `$${item.priceSm}`
-                        }
-                      </p>
+                      {"priceLg" in item && item.priceLg ? (
+                        <div className="font-serif text-sm text-primary shrink-0 text-right leading-snug">
+                          <div className="whitespace-nowrap">Sm ${item.priceSm}</div>
+                          <div className="whitespace-nowrap">Lg ${item.priceLg}</div>
+                        </div>
+                      ) : (
+                        <p className="font-serif text-lg text-primary shrink-0 whitespace-nowrap">
+                          ${item.priceSm}
+                        </p>
+                      )}
                     </div>
                     <p className="text-muted-foreground text-sm mt-1.5 leading-relaxed">{item.description}</p>
                   </div>
