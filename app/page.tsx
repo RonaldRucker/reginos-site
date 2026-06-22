@@ -147,7 +147,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-serif text-2xl mb-3 text-card-foreground">Catering</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Bring Regino&apos;s to your next event. Pasta stations, family style entrées, antipasto, and desserts for any size gathering.
+                Bring Regino&apos;s to your next event. Pasta, family style entrées, salads, and desserts for any large gathering.
               </p>
               <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                 <Link href="/catering">Learn More</Link>

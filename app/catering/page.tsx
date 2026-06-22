@@ -61,10 +61,7 @@ export default function CateringPage() {
             <h1 className="font-serif text-5xl md:text-6xl text-background mb-4">
               Catering
             </h1>
-            <p className="hidden sm:block text-background/90 max-w-xl mx-auto">
-              Bring the authentic flavors of Regino&apos;s to your special occasions.
-              From intimate gatherings to grand celebrations.
-            </p>
+            
           </div>
         </div>
       </section>
@@ -115,9 +112,6 @@ export default function CateringPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8 md:mb-12">
             <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">What We Offer</p>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Serving sizes are approximate. Contact us to build a custom menu for your event.
-            </p>
           </div>
 
           {/* Mobile: card layout */}
@@ -222,10 +216,7 @@ export default function CateringPage() {
       <section className="py-12 md:py-24 px-4 bg-primary text-primary-foreground">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl md:text-4xl mb-6">Ready to Plan Your Event?</h2>
-          <p className="text-primary-foreground/90 mb-8 leading-relaxed">
-            Our catering team is here to help make your event unforgettable. Contact us to discuss 
-            your vision, request a custom quote, or schedule a tasting.
-          </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-background text-foreground hover:bg-background/90">
               <a href="mailto:info@reginositalian.com?subject=Catering%20Quote%20Request">Request a Quote</a>
@@ -235,7 +226,7 @@ export default function CateringPage() {
             </Button>
           </div>
           <p className="text-sm text-primary-foreground/70 mt-6">
-            We recommend booking at least 4 weeks in advance for larger events.
+            We recommend booking at least 2 weeks in advance for larger events.
           </p>
         </div>
       </section>

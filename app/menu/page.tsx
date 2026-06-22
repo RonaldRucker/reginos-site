@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 }
 
 export default function MenuPage() {
+  const menuSections = menuData
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -45,7 +46,7 @@ export default function MenuPage() {
       {/* Menu Content */}
       <section className="py-10 md:py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          {menuData.map((section) => (
+          {menuSections.map((section) => (
             <div key={section.title} className="mb-12 md:mb-20">
               <div className="text-center mb-8 md:mb-10">
                 <h2 className="font-serif text-3xl md:text-4xl text-foreground">{section.title}</h2>
@@ -60,9 +61,9 @@ export default function MenuPage() {
                     <div className="flex justify-between items-start gap-3">
                       <div className="flex flex-wrap items-center gap-2 min-w-0">
                         <h3 className="font-serif text-xl text-foreground">{item.name}</h3>
-                        {"note" in item && item.note && (
+                        {"note" in item && !!item.note && (
                           <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded shrink-0">
-                            {item.note}
+                            {String(item.note)}
                           </span>
                         )}
                       </div>
@@ -85,7 +86,7 @@ export default function MenuPage() {
           ))}
 
           <div className="text-center text-muted-foreground text-sm border-t border-border pt-10">
-            <p className="mb-2">A 20% gratuity will be added to parties of 6 or more.</p>
+            {/* <p className="mb-2">A 20% gratuity will be added to parties of 6 or more.</p> */}
             <p>Consuming raw or undercooked meats, poultry, seafood, or eggs may increase your risk of foodborne illness.</p>
           </div>
         </div>

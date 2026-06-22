@@ -20,8 +20,8 @@ type DrinkSection = {
 const drinksData = drinksDataRaw as DrinkSection[]
 
 export const metadata: Metadata = {
-  title: "Wine & Drinks | Regino's Italian Restaurant",
-  description: "Explore our curated selection of premium wines, signature cocktails, and refreshing beverages.",
+  title: "Wine & Beer | Regino's Italian Restaurant",
+  description: "Explore our curated selection of premium wines, beers, and signature cocktails.",
 }
 
 export default function DrinksPage() {
@@ -34,7 +34,7 @@ export default function DrinksPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/wine.jpg"
-            alt="Wine and Drinks"
+            alt="Wine and Beer"
             fill
             className="object-cover"
             priority
@@ -47,7 +47,7 @@ export default function DrinksPage() {
               Curated Selection
             </p>
             <h1 className="font-serif text-5xl md:text-6xl text-background mb-4">
-              Wine &amp; Drinks
+              Drinks Menu
             </h1>
             <p className="hidden sm:block text-background/90 max-w-xl mx-auto">
               Explore our curated selection of premium wines, beers, and signature cocktails.
@@ -90,7 +90,7 @@ export default function DrinksPage() {
           ))}
 
           <div className="text-center text-muted-foreground text-sm border-t border-border pt-10">
-            <p className="mb-2">Corkage fee: $35 per bottle (limit 2 bottles per table)</p>
+            <p className="mb-2">Corkage fee: $10 per bottle</p>
             <p>Please drink responsibly. We do not serve alcohol to anyone under 21.</p>
           </div>
         </div>
