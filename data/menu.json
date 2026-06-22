@@ -25,9 +25,8 @@
       },
       {
         "name": "GARLIC BREAD",
-        "description": "Four pieces of garlic bread",
-        "priceSm": "6",
-        "note": "add cheese +$2"
+        "description": "Four pieces of garlic bread, add cheese +$2",
+        "priceSm": "6"
       },
       {
         "name": "HOMEMADE SAUSAGE",
@@ -71,15 +70,13 @@
         "name": "ITALIAN MIX SALAD",
         "description": "",
         "priceSm": "18",
-        "priceLg": "43",
-        "note": "single $14"
+        "priceLg": "43"
       },
       {
         "name": "GREEK SALAD",
         "description": "",
         "priceSm": "20",
-        "priceLg": "45",
-        "note": "single $15"
+        "priceLg": "45"
       },
       {
         "name": "MOZZARELLA & TOMATOES",
@@ -167,9 +164,8 @@
       },
       {
         "name": "RAVIOLI",
-        "description": "Meat, cheese, or combination",
-        "priceSm": "20",
-        "note": "add side of pasta +$2"
+        "description": "Meat, cheese, or combination, add side of pasta +$2",
+        "priceSm": "20"
       },
       {
         "name": "OLD WORLD LASAGNA",
@@ -416,21 +412,18 @@
     "items": [
       {
         "name": "SMALL CHEESE 12″",
-        "description": "",
-        "priceSm": "17",
-        "note": "each topping +$2.75"
+        "description": "each topping +$2.75",
+        "priceSm": "17"
       },
       {
         "name": "MEDIUM CHEESE 14″",
-        "description": "",
-        "priceSm": "19",
-        "note": "each topping +$3.25"
+        "description": "each topping +$3.25 ",
+        "priceSm": "19"
       },
       {
         "name": "JUMBO CHEESE 16″",
-        "description": "",
-        "priceSm": "23",
-        "note": "1-5 toppings $3.75 each, 6+ toppings $3.25 each"
+        "description": "1-5 toppings $3.75 each, 6+ toppings $3.25 each",
+        "priceSm": "23"
       },
       {
         "name": "ETNA 16″",
@@ -599,9 +592,8 @@
       },
       {
         "name": "FETTUCCINI ALFREDO",
-        "description": "",
-        "priceSm": "18",
-        "note": "add chicken +$2"
+        "description": "add chicken +$2",
+        "priceSm": "18"
       },
       {
         "name": "SAUSAGE & GREEN PEPPERS",
@@ -626,9 +618,8 @@
     "items": [
       {
         "name": "LUNCH PIZZA 10″",
-        "description": "",
-        "priceSm": "14",
-        "note": "each topping +$2.50"
+        "description": "each topping +$2.50 ",
+        "priceSm": "14"
       }
     ],
     "sectionNote": "Served Mon-Fri 11am – 4pm, Sat 12am – 4pm"
