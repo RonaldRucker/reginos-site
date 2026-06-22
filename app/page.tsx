@@ -8,12 +8,13 @@ import { Card } from "@/components/ui/card"
 import { ArrowRight, UtensilsCrossed, Wine, PartyPopper } from "lucide-react"
 
 const galleryImages = [
-  { src: "/images/owners.jpg", alt: "Father and son" },
-  { src: "/images/gallery-2.jpg", alt: "Restaurant interior" },
-  { src: "/images/gallery-3.jpg", alt: "Tiramisu dessert" },
-  { src: "/images/gallery-4.jpg", alt: "Chef cooking" },
-  { src: "/images/gallery-5.jpg", alt: "Wine selection" },
-  { src: "/images/gallery-6.jpg", alt: "Fresh caprese salad" },
+  { src: "/images/pizza.jpg", alt: "Pizza" },
+  { src: "/images/alfredo.jpg", alt: "alfredo" },
+  { src: "/images/tiramasu.jpeg", alt: "Tiramisu dessert" },
+  { src: "/images/spaghetti.jpeg", alt: "spaghetti" },
+  { src: "/images/wine.jpg", alt: "Wine selection" },
+  { src: "/images/cannoli.jpeg", alt: "Cannoli" },
+  
 ]
 
 export default function HomePage() {
@@ -60,7 +61,7 @@ export default function HomePage() {
             <div>
               <p className="text-primary tracking-[0.2em] uppercase text-sm mb-3">Welcome to Our Table</p>
               <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6 text-balance">
-                80 Years of Italian Excellence
+                Nearly 80 Years of Tradition
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Regino’s was founded in 1947 by Gregorios “George” Mazarakis, 
@@ -98,7 +99,8 @@ export default function HomePage() {
               </div>
               <div className="hidden md:block absolute md:-bottom-6 md:-left-6 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg">
                 <p className="font-serif text-4xl">80</p>
-                <p className="text-sm tracking-wide uppercase">Years of Tradition</p>
+                <p className="text-sm tracking-wide uppercase">in norfolk
+                </p>
               </div>
             </div>
           </div>
